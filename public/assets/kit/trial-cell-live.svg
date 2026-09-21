@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12" role="img" aria-labelledby="t">
+  <title id="t">trial cell, live (grey 3 outline, loader and lattice rim)</title>
+  <desc>Astroquanta trial cell motif: a 12px square on the 12px module.</desc>
+  <rect x="0.5" y="0.5" width="11" height="11" fill="none" stroke="#D8DBD8" stroke-width="1" class="cell cell--live" data-state="live"/>
+</svg>

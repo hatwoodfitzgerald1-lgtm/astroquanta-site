@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 232" width="560" height="232" role="img" aria-labelledby="t">
+  <title id="t">oversized numeral treatment: $310M, capacity</title>
+  <desc>The display mono figure, right aligned, tabular, unit welded, label beneath in grey 2.</desc>
+  <text x="552" y="168" text-anchor="end" font-family="'IBM Plex Mono', 'DejaVu Sans Mono', ui-monospace, monospace" font-weight="500" font-size="176" fill="#D8DBD8" style="font-feature-settings:'tnum' 1, 'zero' 1; letter-spacing:-0.01em" class="display-numeral">$310M</text>
+  <text x="552" y="204" text-anchor="end" font-family="'IBM Plex Mono', 'DejaVu Sans Mono', ui-monospace, monospace" font-size="12" fill="#7E8682" letter-spacing="0.24" class="display-label">capacity before impact exceeds a third of the edge</text>
+  <line x1="0" y1="223.5" x2="560" y2="223.5" stroke="#1F2422" stroke-width="1"/>
+</svg>

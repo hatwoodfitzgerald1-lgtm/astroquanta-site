@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12" role="img" aria-labelledby="t">
+  <title id="t">trial cell, unrun (hairline outline)</title>
+  <desc>Astroquanta trial cell motif: a 12px square on the 12px module.</desc>
+  <rect x="0.5" y="0.5" width="11" height="11" fill="none" stroke="#1F2422" stroke-width="1" class="cell cell--unrun" data-state="unrun"/>
+</svg>

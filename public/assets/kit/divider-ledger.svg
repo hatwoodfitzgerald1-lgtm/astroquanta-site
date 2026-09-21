@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 12" width="720" height="12" role="img" aria-labelledby="t">
+  <title id="t">cell rule divider: 48 cells, 42 killed and 6 kept</title>
+  <desc>Section divider 2 of 3. The seal's 48 cells laid in one row at 4px, the six survivors in their seal positions.</desc>
+  <g class="cell-rule" data-cadence-ms="40" data-order="gate">
+    <rect x="217.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="01" data-gate="1"/>
+    <rect x="223.0" y="4" width="4" height="4" fill="#9BE15D" class="cell cell--kept" data-trial="02" data-gate="5"/>
+    <rect x="229.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="03" data-gate="1"/>
+    <rect x="235.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="04" data-gate="1"/>
+    <rect x="241.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="05" data-gate="3"/>
+    <rect x="247.0" y="4" width="4" height="4" fill="#9BE15D" class="cell cell--kept" data-trial="06" data-gate="5"/>
+    <rect x="253.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="07" data-gate="3"/>
+    <rect x="259.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="08" data-gate="1"/>
+    <rect x="265.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="09" data-gate="3"/>
+    <rect x="271.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="10" data-gate="3"/>
+    <rect x="277.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="11" data-gate="1"/>
+    <rect x="283.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="12" data-gate="1"/>
+    <rect x="289.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="13" data-gate="3"/>
+    <rect x="295.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="14" data-gate="3"/>
+    <rect x="301.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="15" data-gate="1"/>
+    <rect x="307.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="16" data-gate="1"/>
+    <rect x="313.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="17" data-gate="3"/>
+    <rect x="319.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="18" data-gate="1"/>
+    <rect x="325.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="19" data-gate="1"/>
+    <rect x="331.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="20" data-gate="3"/>
+    <rect x="337.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="21" data-gate="3"/>
+    <rect x="343.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="22" data-gate="3"/>
+    <rect x="349.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="23" data-gate="4"/>
+    <rect x="355.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="24" data-gate="4"/>
+    <rect x="361.0" y="4" width="4" height="4" fill="#9BE15D" class="cell cell--kept" data-trial="25" data-gate="5"/>
+    <rect x="367.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="26" data-gate="4"/>
+    <rect x="373.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="27" data-gate="4"/>
+    <rect x="379.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="28" data-gate="4"/>
+    <rect x="385.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="29" data-gate="1"/>
+    <rect x="391.0" y="4" width="4" height="4" fill="#9BE15D" class="cell cell--kept" data-trial="30" data-gate="5"/>
+    <rect x="397.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="31" data-gate="1"/>
+    <rect x="403.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="32" data-gate="1"/>
+    <rect x="409.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="33" data-gate="3"/>
+    <rect x="415.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="34" data-gate="3"/>
+    <rect x="421.0" y="4" width="4" height="4" fill="#9BE15D" class="cell cell--kept" data-trial="35" data-gate="5"/>
+    <rect x="427.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="36" data-gate="3"/>
+    <rect x="433.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="37" data-gate="1"/>
+    <rect x="439.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="38" data-gate="4"/>
+    <rect x="445.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="39" data-gate="4"/>
+    <rect x="451.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="40" data-gate="3"/>
+    <rect x="457.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="41" data-gate="4"/>
+    <rect x="463.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="42" data-gate="1"/>
+    <rect x="469.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="43" data-gate="3"/>
+    <rect x="475.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="44" data-gate="3"/>
+    <rect x="481.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="45" data-gate="1"/>
+    <rect x="487.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="46" data-gate="3"/>
+    <rect x="493.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="47" data-gate="1"/>
+    <rect x="499.0" y="4" width="4" height="4" fill="#9BE15D" class="cell cell--kept" data-trial="48" data-gate="5"/>
+  </g>
+</svg>

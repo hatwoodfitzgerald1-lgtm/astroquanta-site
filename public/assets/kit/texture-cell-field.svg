@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-labelledby="t">
+  <title id="t">cell field texture: a tiling 12px hairline grid</title>
+  <desc>The kit's single texture: a faint 12px cell grid in hairline colour at 40 percent opacity, drawn once behind the frames of About and the legal pages. Static.</desc>
+  <defs><pattern id="cellfield" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M12 0.5 H0.5 V12" fill="none" stroke="#1F2422" stroke-width="1"/></pattern></defs>
+  <rect width="120" height="120" fill="url(#cellfield)" opacity="0.4" class="cell-field"/>
+</svg>

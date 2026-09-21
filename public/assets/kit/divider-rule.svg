@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 24" width="720" height="24" role="img" aria-labelledby="t" preserveAspectRatio="none">
+  <title id="t">prompt rule divider: a prompt glyph and a hairline waiting for a log line</title>
+  <desc>Section divider 3 of 3. Used above frames and above the Plans cards.</desc>
+  <text x="0" y="17" font-family="'IBM Plex Mono', 'DejaVu Sans Mono', ui-monospace, monospace" font-size="15" fill="#D8DBD8" class="prompt-glyph">&gt;</text>
+  <line x1="18.0" y1="12.5" x2="720" y2="12.5" stroke="#1F2422" stroke-width="1" class="rule"/>
+</svg>
