@@ -11,9 +11,14 @@ if (!path.endsWith('/')) path += '/';
 if (redirects[path]) return Astro.redirect(redirects[path], 301);
 const found = map[path];
 let html = found || map['/404/'] || map['/'];
-// og:image and twitter:image are authored site relative; they are made absolute here with the origin that served the
-// page (https://astroquanta.com in production, the webflow.io host on a preview), so crawlers can always fetch them.
-const origin = new URL(Astro.request.url).origin;
+// og:image and twitter:image are authored site relative; they are made absolute here with the public origin the page
+// was served from (https://astroquanta.com in production, the webflow.io host on a preview), so crawlers can always
+// fetch them. On Webflow Cloud the request URL carries the worker's internal host, so the public host is read from
+// X-Forwarded-Host first, then Host, then the request URL; the scheme is https (http only for a loopback host, so the
+// local preview keeps referencing itself).
+const publicHost = ((Astro.request.headers.get('x-forwarded-host') || Astro.request.headers.get('host') || new URL(Astro.request.url).host) + '').split(',')[0].trim();
+const loopback = /^(localhost|127\.0\.0\.1|\[::1\])(:\d+)?$/i.test(publicHost);
+const origin = (loopback ? 'http' : 'https') + '://' + publicHost;
 html = html.replace(/(<meta (?:property="og:image"|name="twitter:image") content=")(\/assets\/)/g, '$1' + origin + '$2');
 // noindex (pass 6): checkout, the confirmation and every 404 carry X-Robots-Tag rather than a meta tag, so the
 // crawl directive travels with the response and the pre deploy head scan (which fails on any meta noindex) stays green.
