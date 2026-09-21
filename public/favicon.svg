@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" role="img" aria-labelledby="t">
+  <title id="t">astroquanta favicon: a 4 by 3 trial grid, two cells kept</title>
+  <desc>The trial grid reduced to twelve cells for the tab size: ten grey, two kept green, on the ground colour.</desc>
+  <rect width="16" height="16" fill="#0A0C0B"/>
+  <rect x="0.5" y="2.5" width="3" height="3" fill="#7E8682"/>
+  <rect x="4.5" y="2.5" width="3" height="3" fill="#9BE15D"/>
+  <rect x="8.5" y="2.5" width="3" height="3" fill="#7E8682"/>
+  <rect x="12.5" y="2.5" width="3" height="3" fill="#7E8682"/>
+  <rect x="0.5" y="6.5" width="3" height="3" fill="#7E8682"/>
+  <rect x="4.5" y="6.5" width="3" height="3" fill="#7E8682"/>
+  <rect x="8.5" y="6.5" width="3" height="3" fill="#7E8682"/>
+  <rect x="12.5" y="6.5" width="3" height="3" fill="#7E8682"/>
+  <rect x="0.5" y="10.5" width="3" height="3" fill="#7E8682"/>
+  <rect x="4.5" y="10.5" width="3" height="3" fill="#7E8682"/>
+  <rect x="8.5" y="10.5" width="3" height="3" fill="#7E8682"/>
+  <rect x="12.5" y="10.5" width="3" height="3" fill="#9BE15D"/>
+</svg>

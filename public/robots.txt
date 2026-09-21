@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /checkout
+Disallow: /checkout/confirmed
+
+Sitemap: https://astroquanta.com/sitemap.xml
