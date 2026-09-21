@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 276 82" width="276" height="82" role="img" aria-labelledby="t">
+  <title id="t">trial grid, 48 specifications: 42 killed, 6 kept</title>
+  <desc>48 cells on the fixed 8 column grid, 12px cells, 2px gaps. Killed cells grey 1, kept cells the accent, positions seeded from run 04:12. Each cell carries its trial id and gate. Legend by gate at right.</desc>
+  <g class="trial-grid" data-cadence-ms="40" data-order="gate">
+    <rect x="0" y="0" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="01" data-gate="1" data-gate-name="point in time"><title>trial 01, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="14" y="0" width="12" height="12" fill="#9BE15D" class="cell cell--kept" data-trial="02" data-gate="5" data-gate-name="kept"><title>trial 02, kept: haircut Sharpe beside the raw one</title></rect>
+    <rect x="28" y="0" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="03" data-gate="1" data-gate-name="point in time"><title>trial 03, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="42" y="0" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="04" data-gate="1" data-gate-name="point in time"><title>trial 04, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="56" y="0" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="05" data-gate="3" data-gate-name="costs"><title>trial 05, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="70" y="0" width="12" height="12" fill="#9BE15D" class="cell cell--kept" data-trial="06" data-gate="5" data-gate-name="kept"><title>trial 06, kept: haircut Sharpe beside the raw one</title></rect>
+    <rect x="84" y="0" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="07" data-gate="3" data-gate-name="costs"><title>trial 07, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="98" y="0" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="08" data-gate="1" data-gate-name="point in time"><title>trial 08, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="0" y="14" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="09" data-gate="3" data-gate-name="costs"><title>trial 09, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="14" y="14" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="10" data-gate="3" data-gate-name="costs"><title>trial 10, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="28" y="14" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="11" data-gate="1" data-gate-name="point in time"><title>trial 11, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="42" y="14" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="12" data-gate="1" data-gate-name="point in time"><title>trial 12, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="56" y="14" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="13" data-gate="3" data-gate-name="costs"><title>trial 13, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="70" y="14" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="14" data-gate="3" data-gate-name="costs"><title>trial 14, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="84" y="14" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="15" data-gate="1" data-gate-name="point in time"><title>trial 15, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="98" y="14" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="16" data-gate="1" data-gate-name="point in time"><title>trial 16, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="0" y="28" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="17" data-gate="3" data-gate-name="costs"><title>trial 17, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="14" y="28" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="18" data-gate="1" data-gate-name="point in time"><title>trial 18, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="28" y="28" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="19" data-gate="1" data-gate-name="point in time"><title>trial 19, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="42" y="28" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="20" data-gate="3" data-gate-name="costs"><title>trial 20, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="56" y="28" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="21" data-gate="3" data-gate-name="costs"><title>trial 21, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="70" y="28" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="22" data-gate="3" data-gate-name="costs"><title>trial 22, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="84" y="28" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="23" data-gate="4" data-gate-name="capacity"><title>trial 23, killed, capacity: under 40 million dollars before impact</title></rect>
+    <rect x="98" y="28" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="24" data-gate="4" data-gate-name="capacity"><title>trial 24, killed, capacity: under 40 million dollars before impact</title></rect>
+    <rect x="0" y="42" width="12" height="12" fill="#9BE15D" class="cell cell--kept" data-trial="25" data-gate="5" data-gate-name="kept"><title>trial 25, kept: haircut Sharpe beside the raw one</title></rect>
+    <rect x="14" y="42" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="26" data-gate="4" data-gate-name="capacity"><title>trial 26, killed, capacity: under 40 million dollars before impact</title></rect>
+    <rect x="28" y="42" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="27" data-gate="4" data-gate-name="capacity"><title>trial 27, killed, capacity: under 40 million dollars before impact</title></rect>
+    <rect x="42" y="42" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="28" data-gate="4" data-gate-name="capacity"><title>trial 28, killed, capacity: under 40 million dollars before impact</title></rect>
+    <rect x="56" y="42" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="29" data-gate="1" data-gate-name="point in time"><title>trial 29, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="70" y="42" width="12" height="12" fill="#9BE15D" class="cell cell--kept" data-trial="30" data-gate="5" data-gate-name="kept"><title>trial 30, kept: haircut Sharpe beside the raw one</title></rect>
+    <rect x="84" y="42" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="31" data-gate="1" data-gate-name="point in time"><title>trial 31, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="98" y="42" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="32" data-gate="1" data-gate-name="point in time"><title>trial 32, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="0" y="56" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="33" data-gate="3" data-gate-name="costs"><title>trial 33, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="14" y="56" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="34" data-gate="3" data-gate-name="costs"><title>trial 34, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="28" y="56" width="12" height="12" fill="#9BE15D" class="cell cell--kept" data-trial="35" data-gate="5" data-gate-name="kept"><title>trial 35, kept: haircut Sharpe beside the raw one</title></rect>
+    <rect x="42" y="56" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="36" data-gate="3" data-gate-name="costs"><title>trial 36, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="56" y="56" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="37" data-gate="1" data-gate-name="point in time"><title>trial 37, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="70" y="56" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="38" data-gate="4" data-gate-name="capacity"><title>trial 38, killed, capacity: under 40 million dollars before impact</title></rect>
+    <rect x="84" y="56" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="39" data-gate="4" data-gate-name="capacity"><title>trial 39, killed, capacity: under 40 million dollars before impact</title></rect>
+    <rect x="98" y="56" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="40" data-gate="3" data-gate-name="costs"><title>trial 40, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="0" y="70" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="41" data-gate="4" data-gate-name="capacity"><title>trial 41, killed, capacity: under 40 million dollars before impact</title></rect>
+    <rect x="14" y="70" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="42" data-gate="1" data-gate-name="point in time"><title>trial 42, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="28" y="70" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="43" data-gate="3" data-gate-name="costs"><title>trial 43, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="42" y="70" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="44" data-gate="3" data-gate-name="costs"><title>trial 44, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="56" y="70" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="45" data-gate="1" data-gate-name="point in time"><title>trial 45, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="70" y="70" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="46" data-gate="3" data-gate-name="costs"><title>trial 46, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="84" y="70" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="47" data-gate="1" data-gate-name="point in time"><title>trial 47, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="98" y="70" width="12" height="12" fill="#9BE15D" class="cell cell--kept" data-trial="48" data-gate="5" data-gate-name="kept"><title>trial 48, kept: haircut Sharpe beside the raw one</title></rect>
+  </g>
+  <g font-family="'IBM Plex Mono', 'DejaVu Sans Mono', ui-monospace, monospace" font-size="11" style="font-feature-settings:'tnum' 1" class="legend">
+    <rect x="126" y="4" width="6" height="6" fill="#3B423F" class="cell cell--killed"/>
+    <text x="154" y="12" text-anchor="end" fill="#7E8682">17</text>
+    <text x="162" y="12" fill="#7E8682">point in time</text>
+    <rect x="126.5" y="20.5" width="5" height="5" fill="none" stroke="#1F2422" stroke-width="1" class="cell cell--unrun"/>
+    <text x="154" y="28" text-anchor="end" fill="#7E8682">0</text>
+    <text x="162" y="28" fill="#7E8682">walk forward</text>
+    <rect x="126" y="36" width="6" height="6" fill="#3B423F" class="cell cell--killed"/>
+    <text x="154" y="44" text-anchor="end" fill="#7E8682">17</text>
+    <text x="162" y="44" fill="#7E8682">costs</text>
+    <rect x="126" y="52" width="6" height="6" fill="#3B423F" class="cell cell--killed"/>
+    <text x="154" y="60" text-anchor="end" fill="#7E8682">8</text>
+    <text x="162" y="60" fill="#7E8682">capacity</text>
+    <rect x="126" y="68" width="6" height="6" fill="#9BE15D" class="cell cell--kept"/>
+    <text x="154" y="76" text-anchor="end" fill="#D8DBD8">6</text>
+    <text x="162" y="76" fill="#7E8682">kept</text>
+  </g>
+</svg>
