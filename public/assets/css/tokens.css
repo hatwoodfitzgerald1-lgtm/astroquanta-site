@@ -1,0 +1,152 @@
+/* Astroquanta design tokens (pass 1 owns this file: palette roles, spacing scale, container widths, grid, breakpoints).
+   Pass 2 adds the type tokens it settles; pass 4 adds the motion tokens (easing, durations). Nothing here is hard coded again elsewhere.
+
+   Breakpoints (documented; CSS variables cannot drive media queries):
+     390   phone, the mobile composition (44px strip, drawer, single column, frames fluid to 320px)
+     768   the rail appears as a fixed 240px column; frames return to the 24ch label column
+     1024  two column layouts (checkout aside, legal index, contact identity) engage
+     1440  the design width: 240px rail plus a 1200px console column
+     1920  the console column stops growing at --w-col-max and sits left, the rail stays 240px */
+
+:root {
+  /* palette roles, design doc 5.2 */
+  --ground: #0A0C0B;      /* page, frames, WebGL clear colour, loader */
+  --hair: #1F2422;        /* every 1px rule, frame border, rail edge, gate plane, chart axis */
+  --g1: #3B423F;          /* fills only: killed cells, killed curves, padding rows; never text */
+  --g2: #7E8682;          /* labels, secondary text, foot lines, KILLED token, disabled, ticks */
+  --g3: #D8DBD8;          /* primary text, numerals, lead lines, cell rims, block cursor, focus rings */
+  --kept: #9BE15D;        /* accent: kept cells, KEPT and LIVE tokens, the purchase button, MOST POPULAR */
+  --kept-hover: #B3EA85;
+  --bg: var(--ground);
+  --surface: var(--ground);
+  --ink: var(--g3);
+  --ink-muted: var(--g2);
+  --accent: var(--kept);
+
+  /* spacing scale, design doc 5.6: 8px base with the geometric jump at the top */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+  --s-10: 128px;
+  --s-11: 192px;
+  --s-12: 256px;
+
+  /* the Sidebar-Anchored skeleton: a fixed rail beside a scrolling console column */
+  --rail-w: 240px;
+  --strip-h: 44px;
+  --col-max: 1200px;                 /* the console column at the 1440 design width */
+  --gutter: var(--s-8);              /* inline gutter inside the console column at 1440 */
+
+  /* container widths (four, used across every page so section rhythm has real steps) */
+  --w-full: 100%;                                    /* full bleed across the console column */
+  --w-wide: min(100% - 2 * var(--gutter), 1104px);   /* the wide container: grids, tables, card rows */
+  --w-frame: 720px;                                  /* the console frame, canonical desktop width */
+  --w-text: 65ch;                                    /* the reading measure */
+  --w-narrow: 42rem;                                 /* the narrow measure for quotes and asides */
+  --w-aside: 336px;                                  /* sticky side panels: captions, the Research panel */
+
+  /* the console grid: five ch based columns for every log row (Offer Visual Spec 5.3) */
+  --log-glyph: 2ch;
+  --log-label: 24ch;
+  --log-label-m: 14ch;
+  --log-arrow: 3ch;
+  --log-status: 8ch;
+
+  /* frame chrome */
+  --frame-title-h: 28px;
+  --frame-pad: var(--s-3);
+
+  /* the trial cell motif */
+  --cell: 12px;
+  --cell-gap: 2px;
+  --cell-m: 10px;
+
+  /* kit icons (pass 3): 24px on the 12px module, 16px with a 1px stroke at phone width (kit.json icon_spec) */
+  --icon-size: 24px;
+
+  /* ------------------------------------------------------------------------------------------------
+     Type system (pass 2 owns this block; design doc 5.3 and 5.12 section 12).
+     Two faces: IBM Plex Mono 400 and 500 for everything including every numeral; Schibsted Grotesk 500 and 700
+     for h1 and h2 only. Body is 15px; the display numeral is computed from the 8 to 14x contrast target, not from
+     the next step of a linear scale. px at 1440 and 390 in the comments.
+     ------------------------------------------------------------------------------------------------ */
+  --font-mono: "IBM Plex Mono", "Plex Mono Fallback", "Plex Mono Fallback Win", "Plex Mono Fallback Courier", ui-monospace, monospace;
+  --font-grot: "Schibsted Grotesk", "Schibsted Fallback", Arial, sans-serif;
+
+  --t-label: 0.75rem;                                   /* 12 / 12   labels, eyebrows, foot lines, compliance strip, frame title bars, HUD chrome */
+  --t-rail: 0.8125rem;                                  /* 13 / 13   the rail, the mobile strip, the legal index, the mobile hero subhead */
+  --t-body: 0.9375rem;                                  /* 15 / 15   body, log rows, form labels and inputs, buttons */
+  --t-lead: 1.125rem;                                   /* 18 / 18   standfirsts, frame lead lines that carry weight */
+  --t-statement: clamp(1.125rem, 1.4vw, 1.25rem);       /* 20 / 18   the manifesto, pull quotes */
+  --t-h3: 1rem;                                         /* 16 / 16   mono sub headings, FAQ questions */
+  --t-h2-s: clamp(1.375rem, 1.9vw, 1.75rem);            /* 27 / 22   Schibsted 500: section titles inside a reading column (posts, legal) */
+  --t-h2: clamp(1.75rem, 2.6vw, 2.5rem);                /* 37 / 28   Schibsted 500: page section titles */
+  --t-h1-hero: clamp(1.75rem, 2.6vw, 2.5rem);           /* 37 / 28   Schibsted 500: the Home h1, subordinate to the Fraction by design */
+  --t-h1: clamp(2.5rem, 4vw, 3.5rem);                   /* 58 / 40   Schibsted 700: interior page titles */
+  --t-numeral: clamp(2rem, 2.8vw, 2.5rem);              /* 40 / 32   Plex Mono 500: simulator stats, checkout figures */
+  --t-numeral-lg: clamp(2.25rem, 4vw, 3.6rem);          /* 58 / 36   Plex Mono 500: the oversized numeral index (gates, stats strip, prices, step indices, readout) */
+  --t-display-s: clamp(3.5rem, 8.4vw, 7.5rem);          /* 120 / 56  Plex Mono 500: the stats strip figures, section 12's 7.5rem floor (8x body at 1440) */
+  --t-display-2: clamp(4.75rem, 7.2vw, 6.5rem);         /* 104 / 76  Plex Mono 500: the secondary display step (the About numeral index) */
+  --t-display: clamp(7.5rem, 11.5vw, 11rem);            /* 166 / 76  Plex Mono 500: the Fraction and the page count; 11.0x body at 1440, 8x at 1024, 11.7x at 1920 */
+
+  --lh-display: 0.9;
+  --lh-h1: 1.05;
+  --lh-h2: 1.15;
+  --lh-statement: 1.45;
+  --lh-body: 1.6;
+  --lh-label: 1.5;
+
+  --ls-display: -0.03em;                                /* display above 96px */
+  --ls-numeral: -0.02em;                                /* numerals 40 to 60px */
+  --ls-heading: -0.01em;                                /* h1 and h2, design doc 5.12 section 12 */
+  --ls-label: 0.02em;                                   /* small labels and eyebrows, design doc 5.12 section 12 */
+  --ls-token: 0.06em;                                   /* uppercase status tokens: KEPT, KILLED, DONE, LIVE, OK, MOST POPULAR */
+
+  --measure: var(--w-text);                             /* 65ch body measure on About, posts and legal; never wider than 75ch */
+  --measure-subhead: 65ch;
+  --measure-h1: 22ch;
+
+  /* ------------------------------------------------------------------------------------------------
+     Motion signature (pass 4 owns this block; design doc 5.1 and 5.12 section 13). Two curves and one rule:
+     Latch (fast in, hard stop: a relay closing), Settle (quick then a long exact settle: a value coming to rest on a
+     meter), Stepped (steps(1, end): log lines, cells, digits and crossfades arrive discretely, nothing fades).
+     Three durations and the cadence constants. No other curve or duration anywhere in CSS or GSAP.
+     ------------------------------------------------------------------------------------------------ */
+  --ease-latch: cubic-bezier(0.7, 0, 0.1, 1);
+  --ease-settle: cubic-bezier(0.12, 0.7, 0.16, 1);
+  --ease-step: steps(1, end);
+  --d-fast: 0.12s;        /* a log line, a cell, a glyph, a digit */
+  --d-base: 0.36s;        /* a status token resolving, a cursor moving, the survivors turning green, the Flip */
+  --d-slow: 0.9s;         /* the equity curve drawing, the quarter turn, the seal settling, a hairline drawing */
+  --cad-row: 120ms;       /* log rows arrive 120ms apart */
+  --cad-cell: 40ms;       /* grid cells fill 40ms apart */
+  --cad-tick: 1s;         /* the block cursor and the run clock at 1Hz */
+  --cursor-glyph: "\258D";
+
+  color-scheme: dark;
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    /* the mobile Fraction: 76px against the 15px body is 5.07x (the orchestrator's 4.5 floor); one line at 390 with the hairline slash */
+    --t-display: 4.75rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    --gutter: var(--s-4);
+    --log-label: var(--log-label-m);
+    --cell: var(--cell-m);
+    --icon-size: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1249.98px) {
+  :root { --gutter: var(--s-6); }
+}
