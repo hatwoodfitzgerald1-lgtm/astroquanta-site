@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trial Sweep Simulator | Astroquanta</title>
+<meta name="description" content="Pick a hypothesis, a universe, a horizon and a trial count. Watch N synthetic specifications pass five gates and see what a denominator does to a Sharpe.">
+<link rel="canonical" href="https://astroquanta.com/sweep">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Astroquanta">
+<meta property="og:title" content="Run a sweep. Choose N. Watch what dies.">
+<meta property="og:description" content="Pick a hypothesis, a universe, a horizon and a trial count. Watch N synthetic specifications pass five gates and see what a denominator does to a Sharpe.">
+<meta property="og:url" content="https://astroquanta.com/sweep">
+<meta property="og:image" content="/assets/frames/og-sweep.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The trial grid of 48 cells, 42 grey and 6 green, beside 48 to 6, the trial sweep simulator and the four gate counts.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Run a sweep. Choose N. Watch what dies.">
+<meta name="twitter:description" content="Pick a hypothesis, a universe, a horizon and a trial count. Watch N synthetic specifications pass five gates and see what a denominator does to a Sharpe.">
+<meta name="twitter:image" content="/assets/frames/og-sweep.png">
+<meta name="twitter:image:alt" content="The trial grid of 48 cells, 42 grey and 6 green, beside 48 to 6, the trial sweep simulator and the four gate counts.">
+<meta name="theme-color" content="#0A0C0B">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/assets/kit/favicon.svg" color="#9BE15D">
+<link rel="preload" href="/fonts/IBMPlexMono-Medium.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/schibsted-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/tokens.min.css?v=2681284b">
+<link rel="stylesheet" href="/assets/css/site.min.css?v=2681284b">
+<link rel="stylesheet" href="/assets/css/motion.min.css?v=2681284b">
+<script>window.AQ_V="2681284b";window.AQ_MIN=true;(function(){var d=document.documentElement;var q=/[?&]qa=([a-z,]+)/.exec(location.search);var qa=q?q[1].split(","):[];var rm=qa.indexOf("rm")>-1||(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches);d.classList.add(rm?"rm":"motion");var seen=false;try{seen=!!sessionStorage.getItem("aq_seen");sessionStorage.setItem("aq_seen","1");}catch(e){}if(qa.indexOf("noloader")>-1||(location.pathname!=="/"&&seen))d.classList.add("noloader");})();</script>
+</head>
+<body data-route="sweep" data-scene="live-lattice">
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="loader" id="loader" role="progressbar" aria-valuemin="0" aria-valuemax="48" aria-valuenow="0" aria-label="Loading run 04:12">
+<div class="loader__rail"><span class="wordmark">astroquanta</span></div>
+<div class="loader__col">
+<ol class="loader__grid" aria-hidden="true"><li data-gate="1"></li><li data-gate="5"></li><li data-gate="1"></li><li data-gate="1"></li><li data-gate="3"></li><li data-gate="5"></li><li data-gate="3"></li><li data-gate="1"></li><li data-gate="3"></li><li data-gate="3"></li><li data-gate="1"></li><li data-gate="1"></li><li data-gate="3"></li><li data-gate="3"></li><li data-gate="1"></li><li data-gate="1"></li><li data-gate="3"></li><li data-gate="1"></li><li data-gate="1"></li><li data-gate="3"></li><li data-gate="3"></li><li data-gate="3"></li><li data-gate="4"></li><li data-gate="4"></li><li data-gate="5"></li><li data-gate="4"></li><li data-gate="4"></li><li data-gate="4"></li><li data-gate="1"></li><li data-gate="5"></li><li data-gate="1"></li><li data-gate="1"></li><li data-gate="3"></li><li data-gate="3"></li><li data-gate="5"></li><li data-gate="3"></li><li data-gate="1"></li><li data-gate="4"></li><li data-gate="4"></li><li data-gate="3"></li><li data-gate="4"></li><li data-gate="1"></li><li data-gate="3"></li><li data-gate="3"></li><li data-gate="1"></li><li data-gate="3"></li><li data-gate="1"></li><li data-gate="5"></li></ol>
+<p class="loader__line">loading run 04:12 · <span data-loader-count> 0 / 48</span></p>
+<button type="button" class="loader__skip" data-loader-skip>skip →</button>
+</div>
+</div>
+<header class="site-header">
+<div class="mobile-strip">
+<a href="/" aria-label="Astroquanta home">astroquanta</a>
+<span data-clock aria-label="Run clock, ticking from 04:12">04:12:00</span>
+<button type="button" data-drawer-toggle aria-expanded="false" aria-controls="rail" aria-label="Open routes">menu</button>
+</div>
+<nav id="rail" class="rail" aria-label="Primary">
+<div class="drawer-title" aria-hidden="true"><span>astroquanta · routes</span><span data-clock>04:12:00</span></div>
+<a class="wordmark" href="/" aria-label="Astroquanta home">astroquanta</a>
+<div class="rail-block"><p class="label">run clock</p><p class="clock" data-clock aria-label="Run clock, ticking from 04:12">04:12:00</p></div>
+<div class="rail-block"><p class="label">gates</p><ol class="gates" aria-label="Gate index. Point in time 48, walk forward 31, costs 14, capacity 6."><li data-tip="17 killed for look ahead" tabindex="0" aria-label="point in time 48. 17 killed for look ahead"><span class="gate-name"><svg class="icon icon--point-in-time" viewBox="0 0 24 24" role="img" aria-label="point in time icon" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter">
+    <rect x="6.75" y="6.75" width="10.5" height="10.5"/>
+    <line x1="12" y1="12" x2="7.5" y2="7.5"/>
+    <line x1="12" y1="12" x2="16.5" y2="7.5" stroke-dasharray="1.5 1.5"/>
+  </g></svg>point in time</span><span>48</span></li><li data-tip="0 killed. A gate that killed nothing is still a gate." tabindex="0" aria-label="walk forward 31. 0 killed. A gate that killed nothing is still a gate."><span class="gate-name"><svg class="icon icon--walk-forward" viewBox="0 0 24 24" role="img" aria-label="walk forward icon" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter">
+    <rect x="1.75" y="7.75" width="8.5" height="8.5"/>
+    <rect x="13.75" y="7.75" width="8.5" height="8.5"/>
+    <line x1="9" y1="12" x2="19" y2="12"/>
+    <polyline points="16,9.5 18.5,12 16,14.5"/>
+  </g></svg>walk forward</span><span>31</span></li><li data-tip="17 killed, edge under 4 bps against a 7 bp round trip" tabindex="0" aria-label="costs 14. 17 killed, edge under 4 bps against a 7 bp round trip"><span class="gate-name"><svg class="icon icon--costs" viewBox="0 0 24 24" role="img" aria-label="costs icon" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter">
+    <path d="M6.75 6.75 H13.25 V10.75 H17.25 V17.25 H6.75 Z"/>
+  </g></svg>costs</span><span>14</span></li><li data-tip="8 killed, under 40 million dollars before impact" tabindex="0" aria-label="capacity 6. 8 killed, under 40 million dollars before impact"><span class="gate-name"><svg class="icon icon--capacity" viewBox="0 0 24 24" role="img" aria-label="capacity icon" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter">
+    <rect x="6.75" y="8.75" width="10.5" height="10.5"/>
+    <line x1="5" y1="5.75" x2="19" y2="5.75"/>
+  </g></svg>capacity</span><span>6</span></li></ol></div>
+<div class="rail-block"><p class="label">routes</p><ol class="routes"><li><a href="/">home</a></li><li><a href="/plans">plans</a></li><li aria-current="page"><a href="/sweep">sweep</a></li><li><a href="/about">about</a></li><li><a href="/blog">blog</a></li><li><a href="/contact">contact</a></li></ol>
+<ol class="routes legal"><li><a href="/terms-of-service">terms</a></li><li><a href="/privacy-policy">privacy</a></li></ol></div>
+<div class="rail-block"><p class="label">this page</p><p class="fraction" aria-live="polite" data-sweep-fraction>48 / 48</p>
+<p class="rail-plan" data-rail-plan hidden aria-live="polite"><span class="glyph" aria-hidden="true">&gt;</span><span class="rail-plan__label">plan</span><span class="arrow" aria-hidden="true">→</span><span class="rail-plan__name" data-rail-plan-name></span><span class="status is-kept" aria-label="Kept">KEPT</span></p></div>
+<a class="btn btn-primary rail-purchase" href="/plans#research" aria-label="Purchase a Plan. Opens the Plans page.">Purchase a Plan</a>
+<div class="rail-foot-row"><a class="rail-foot" href="/terms-of-service">research software · not advice</a><button type="button" class="rail-help" data-help-toggle data-tip="shortcuts: g h home · g p plans · g s sweep · ? opens the frame" aria-haspopup="dialog" aria-expanded="false" aria-controls="help-frame" aria-label="Keyboard shortcuts. Press the question mark key at any time.">?</button></div>
+</nav>
+</header>
+<main id="main" tabindex="-1">
+<section aria-labelledby="sweep-heading" class="page-header section-simulator sweep-layout ph-sweep" data-scene-slot="live-lattice" data-enter-plain>
+<div class="inputs">
+<div class="ph-main" data-enter="glyph" data-enter-plain>
+<p class="eyebrow">astroquanta · sweep</p>
+<h1 id="sweep-heading">Choose N. Run the sweep. Read the log.</h1>
+<p class="subhead">This page draws N synthetic specifications from your inputs and pushes every one through the five gates the agent uses. The grid fills, the log arrives, a candidate comes out with its haircut for N attached. Same inputs, same result, every time. It uses no market data and describes no real strategy.</p>
+</div>
+<div class="inputs__sticky">
+<div class="prompt-rule" data-kit="divider-rule" aria-hidden="true"><span class="prompt-glyph">&gt;</span><span class="rule"></span></div>
+<form id="sweep-form" class="frame" novalidate action="/sweep" method="get" data-enter="retype fields digits">
+<div class="frame__title"><span>astroquanta · inputs</span><span>04:12:00</span></div>
+<p class="frame__lead">Four inputs seed the generator. Change any one and you get a different sweep.</p>
+<div class="frame__body">
+<div class="field"><label for="hypothesis">hypothesis</label><input id="hypothesis" name="hypothesis" type="text" maxlength="48" placeholder="post earnings drift" aria-describedby="hypothesis-help hypothesis-err"><p class="help" id="hypothesis-help">A name for the run, up to 48 characters. It seeds the generator and nothing else, so two hypotheses give two different sweeps. Left empty it reads untitled hypothesis.</p><p class="error" id="hypothesis-err" aria-live="polite"></p></div>
+<div class="field"><label for="universe">universe</label><select id="universe" name="universe" aria-describedby="universe-help"><option value="0" selected>US large cap (500 names)</option><option value="1">US all cap (3,000 names)</option><option value="2">Global developed (2,000 names)</option><option value="3">Futures (60 contracts)</option></select><p class="help" id="universe-help">Sets the look ahead rate, the round trip cost in bps and the capacity base. Large cap is cheap to trade and holds more money. All cap is neither.</p></div>
+<div class="field"><label for="horizon">horizon</label><select id="horizon" name="horizon" aria-describedby="horizon-help"><option value="0">1 day</option><option value="1">5 days</option><option value="2" selected>21 days</option><option value="3">63 days</option></select><p class="help" id="horizon-help">Sets how much gross edge a given Sharpe earns per round trip and how far capacity scales. Short horizons turn over more and pay more to trade.</p></div>
+<div class="field"><label for="ncount">trial count N</label><div class="range-cell"><p class="readout" id="n-readout" aria-hidden="true">48</p><div class="range-track"><input id="ncount" name="n" type="range" min="8" max="96" step="8" value="48" aria-label="Trial count, 8 to 96 in steps of 8" aria-describedby="ncount-help"><div class="range-ticks" aria-hidden="true" data-range-ticks="ncount"><span data-n="8" class="is-past"></span><span data-n="16" class="is-past"></span><span data-n="24" class="is-past"></span><span data-n="32" class="is-past"></span><span data-n="40" class="is-past"></span><span data-n="48" class="is-current"></span><span data-n="56"></span><span data-n="64"></span><span data-n="72"></span><span data-n="80"></span><span data-n="88"></span><span data-n="96"></span></div></div><div class="range-ends" aria-hidden="true"><span>8</span><span>96</span></div></div><p class="help" id="ncount-help">The number of specifications the sweep will try. The haircut on the final Sharpe grows with the square root of the log of N. More trials, bigger haircut. That is the whole point of the page.</p></div>
+<button type="submit" class="btn" id="run-btn" aria-label="Run the sweep with the current inputs">Run the sweep</button>
+</div>
+</form>
+<p class="compliance">This simulator generates synthetic specifications from your inputs using a fixed illustrative model. It uses no market data and describes no real strategy. The haircut constant is illustrative.</p>
+<p class="dim rm-note" data-rm-note>Motion is off. The log and the grid appear at once.</p>
+</div>
+</div>
+<div class="results">
+<h2 id="sim-heading" class="visually-hidden">The Trial Sweep Simulator</h2>
+<p class="display fraction-setpiece page-fraction" aria-label="48 of 48 specifications still standing" data-sweep-fraction><span class="num"><span class="digit" data-digit>4</span><span class="digit" data-digit>8</span></span><span class="frac-slash"><span class="frac-slash__text"> / </span></span><span class="den"><span class="digit" data-digit>4</span><span class="digit" data-digit>8</span></span></p>
+<div class="scene-slot" data-scene="live-lattice" aria-hidden="true"></div>
+<div class="prompt-rule" data-kit="divider-rule" aria-hidden="true"><span class="prompt-glyph">&gt;</span><span class="rule"></span></div>
+<figure class="frame" id="frameB" data-enter="retype log">
+<div class="frame__title"><span class="frame__name" id="frameB-title">astroquanta · trial log 0 rows</span><span class="frame__ts">04:12:00</span></div>
+<p class="frame__lead" id="frameB-lead">Waiting.</p>
+<div class="grid-nav"><a class="grid-skip" href="#trial-grid-end"><span class="prompt-glyph" aria-hidden="true">&gt;</span> skip the grid. Arrow keys move between its cells. →</a><ol class="trial-grid" id="trial-grid" aria-label="A grid of 48 outlined cells with nothing filled in." data-roving></ol><span class="grid-end" id="trial-grid-end" tabindex="-1"></span></div>
+<ol class="frame__rows" id="frameB-rows" aria-describedby="status-note"></ol>
+<figcaption class="frame__foot" id="frameB-foot"></figcaption>
+</figure>
+<p class="visually-hidden" id="status-note">The status column reads KILLED for rows of killed trials and KEPT for the surviving row.</p>
+<figure class="frame" id="frameC" hidden>
+<div class="frame__title"><span class="frame__name" id="frameC-title">astroquanta · candidate none</span><span class="frame__ts">04:12:00</span></div>
+<p class="frame__lead" id="frameC-lead"></p>
+<ol class="frame__rows" id="frameC-rows"></ol>
+<figcaption class="frame__foot" id="frameC-foot"></figcaption>
+</figure>
+<div class="stats" role="list" id="sweep-stats" data-enter="digits">
+<div role="listitem"><span class="numeral" id="stat-n">48</span><span class="stat-label" id="stat-n-label">specifications</span></div>
+<div role="listitem"><span class="numeral" id="stat-k">·</span><span class="stat-label">still standing</span></div>
+<div role="listitem"><span class="numeral" id="stat-hc">·</span><span class="stat-label" id="stat-hc-label">haircut Sharpe</span></div>
+<div role="listitem"><span class="numeral" id="stat-cap">·</span><span class="stat-label" id="stat-cap-label">capacity</span></div>
+</div>
+<p class="muted" id="result-note" hidden>Raise N and run again. The in sample number will tend to rise. The haircut number will not.</p>
+<div class="landing-cta" data-enter="edges">
+<a class="btn btn-primary btn-block" href="/checkout?plan=research">Purchase Research</a>
+<p class="muted">$7,500 a month, five seats, one shared trial ledger. Run this on your own data.</p>
+<p><a class="link-tertiary" href="/checkout?plan=desk">Purchase Desk, one seat, $1,800 a month</a></p>
+<p class="compliance">This simulator generates synthetic specifications from your inputs using a fixed illustrative model. It uses no market data and describes no real strategy. The haircut constant is illustrative.</p>
+<p class="compliance">Illustrative output. Backtested, modelled and simulated results are hypothetical. They do not represent actual trading, they carry the benefit of hindsight, and they may differ materially from any result achieved in the market. Past performance, real or simulated, does not indicate future results.</p>
+<p class="compliance">No output of the Services is a recommendation, an offer, a solicitation, or advice about any security, strategy or account. Every investment decision is made by the customer and the customer's own investment professionals.</p>
+</div>
+</div>
+<div id="tooltip" class="tooltip" role="tooltip"></div>
+</section>
+<section aria-labelledby="gates-heading" class="section-explainer">
+<h2 id="gates-heading" class="visually-hidden">How the gates are scored</h2>
+<button type="button" class="expander__toggle" data-expander aria-expanded="false" aria-controls="gates-explainer">What each gate checks</button>
+<div id="gates-explainer" class="expander__panel" hidden data-enter-open="log">
+<ol class="log log--icons">
+<li><svg class="icon icon--point-in-time" viewBox="0 0 24 24" role="img" aria-label="point in time icon" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter">
+    <rect x="6.75" y="6.75" width="10.5" height="10.5"/>
+    <line x1="12" y1="12" x2="7.5" y2="7.5"/>
+    <line x1="12" y1="12" x2="16.5" y2="7.5" stroke-dasharray="1.5 1.5"/>
+  </g></svg>point in time → a fixed share of trials per universe is killed for look ahead, because a share of any real sweep leaks restated data</li>
+<li><svg class="icon icon--walk-forward" viewBox="0 0 24 24" role="img" aria-label="walk forward icon" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter">
+    <rect x="1.75" y="7.75" width="8.5" height="8.5"/>
+    <rect x="13.75" y="7.75" width="8.5" height="8.5"/>
+    <line x1="9" y1="12" x2="19" y2="12"/>
+    <polyline points="16,9.5 18.5,12 16,14.5"/>
+  </g></svg>walk forward → the in sample Sharpe is shrunk to a fraction between 30 and 80 percent; anything under 0.45 out of sample dies</li>
+<li><svg class="icon icon--costs" viewBox="0 0 24 24" role="img" aria-label="costs icon" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter">
+    <path d="M6.75 6.75 H13.25 V10.75 H17.25 V17.25 H6.75 Z"/>
+  </g></svg>costs → gross edge per round trip is the horizon’s edge scale times the walk forward Sharpe; the universe’s round trip cost is subtracted; nothing left, dead</li>
+<li><svg class="icon icon--capacity" viewBox="0 0 24 24" role="img" aria-label="capacity icon" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter">
+    <rect x="6.75" y="8.75" width="10.5" height="10.5"/>
+    <line x1="5" y1="5.75" x2="19" y2="5.75"/>
+  </g></svg>capacity → the universe’s base capacity times the horizon multiplier times a draw; under 40 million dollars, dead</li>
+<li><svg class="icon icon--candidate" viewBox="0 0 24 24" role="img" aria-label="candidate icon" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter">
+    <rect x="6.5" y="6.5" width="11" height="11" fill="#9BE15D" stroke="currentColor" stroke-width="1" class="cell cell--kept"/>
+  </g></svg>count → the haircut is 0.065 times the square root of twice the natural log of N; at N equals 48 that is 0.18, which is how 0.81 becomes 0.63</li>
+</ol>
+<p class="measure">The constant 0.065 is illustrative and was chosen so the canonical candidate reproduces. Everything else is arithmetic you can check.</p>
+</div>
+</section>
+
+</main>
+<footer class="site-footer">
+<div class="footer-sms"><div class="frame sms" id="sms-footer" data-enter="retype fields log" data-enter-parallel data-enter-cap="400">
+<div class="frame__title"><span>astroquanta · sms</span><span>04:12:00</span></div>
+
+<div class="frame__body">
+<h2 id="sms-footer-heading" class="sms-heading">Join Our SMS List</h2>
+<form class="sms-form" data-sms-form novalidate action="/checkout/confirmed" method="post">
+<div class="field"><label for="sms-footer-phone">phone</label><input id="sms-footer-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="Your Phone Number" aria-describedby="sms-footer-phone-err"><p class="error" id="sms-footer-phone-err" aria-live="polite"></p></div>
+<div class="check"><input type="checkbox" data-kit="trial-cell" id="sms-footer-c1" name="terms" data-consent="terms" aria-describedby="sms-footer-c1-err"><label for="sms-footer-c1">I agree to the <a href="/terms-of-service">Terms</a> &amp; <a href="/privacy-policy">Privacy Policy</a></label><p class="error" id="sms-footer-c1-err" aria-live="polite"></p></div>
+<div class="check"><input type="checkbox" data-kit="trial-cell" id="sms-footer-c2" name="sms_consent" data-consent="sms" aria-describedby="sms-footer-c2-err"><label for="sms-footer-c2">By checking the box, clicking submit, and opting in, I agree to receive recurring automated account notifications SMS messages from Astroquanta at the phone number provided. Reply HELP for help or call/email <a href="tel:[INSERT PHONE HERE]">[INSERT PHONE HERE]</a> / <a href="mailto:support@astroquanta.com">support@astroquanta.com</a> STOP to cancel. Msg frequency varies. Msg &amp; data rates may apply. Consent is not a condition of purchase. Information gathered in the SMS campaign will not be shared with third parties or affiliates for marketing purposes. Read our <a href="/terms-of-service">Terms</a> &amp; <a href="/privacy-policy">Privacy Policy</a>.</label><p class="error" id="sms-footer-c2-err" aria-live="polite"></p></div>
+<button type="submit" class="btn">Submit</button>
+</form>
+
+</div>
+</div>
+</div><div class="cell-rule" data-kit="divider-ledger" role="img" aria-label="A single row of 48 small cells, 42 grey and 6 green." data-enter="cells"><svg viewBox="217 0 286 12" width="286" height="12" aria-hidden="true" focusable="false"><g class="cell-rule" data-cadence-ms="40" data-order="gate">
+    <rect x="217.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="01" data-gate="1"/>
+    <rect x="223.0" y="4" width="4" height="4" fill="#9BE15D" class="cell cell--kept" data-trial="02" data-gate="5"/>
+    <rect x="229.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="03" data-gate="1"/>
+    <rect x="235.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="04" data-gate="1"/>
+    <rect x="241.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="05" data-gate="3"/>
+    <rect x="247.0" y="4" width="4" height="4" fill="#9BE15D" class="cell cell--kept" data-trial="06" data-gate="5"/>
+    <rect x="253.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="07" data-gate="3"/>
+    <rect x="259.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="08" data-gate="1"/>
+    <rect x="265.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="09" data-gate="3"/>
+    <rect x="271.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="10" data-gate="3"/>
+    <rect x="277.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="11" data-gate="1"/>
+    <rect x="283.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="12" data-gate="1"/>
+    <rect x="289.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="13" data-gate="3"/>
+    <rect x="295.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="14" data-gate="3"/>
+    <rect x="301.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="15" data-gate="1"/>
+    <rect x="307.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="16" data-gate="1"/>
+    <rect x="313.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="17" data-gate="3"/>
+    <rect x="319.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="18" data-gate="1"/>
+    <rect x="325.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="19" data-gate="1"/>
+    <rect x="331.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="20" data-gate="3"/>
+    <rect x="337.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="21" data-gate="3"/>
+    <rect x="343.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="22" data-gate="3"/>
+    <rect x="349.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="23" data-gate="4"/>
+    <rect x="355.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="24" data-gate="4"/>
+    <rect x="361.0" y="4" width="4" height="4" fill="#9BE15D" class="cell cell--kept" data-trial="25" data-gate="5"/>
+    <rect x="367.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="26" data-gate="4"/>
+    <rect x="373.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="27" data-gate="4"/>
+    <rect x="379.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="28" data-gate="4"/>
+    <rect x="385.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="29" data-gate="1"/>
+    <rect x="391.0" y="4" width="4" height="4" fill="#9BE15D" class="cell cell--kept" data-trial="30" data-gate="5"/>
+    <rect x="397.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="31" data-gate="1"/>
+    <rect x="403.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="32" data-gate="1"/>
+    <rect x="409.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="33" data-gate="3"/>
+    <rect x="415.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="34" data-gate="3"/>
+    <rect x="421.0" y="4" width="4" height="4" fill="#9BE15D" class="cell cell--kept" data-trial="35" data-gate="5"/>
+    <rect x="427.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="36" data-gate="3"/>
+    <rect x="433.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="37" data-gate="1"/>
+    <rect x="439.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="38" data-gate="4"/>
+    <rect x="445.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="39" data-gate="4"/>
+    <rect x="451.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="40" data-gate="3"/>
+    <rect x="457.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="41" data-gate="4"/>
+    <rect x="463.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="42" data-gate="1"/>
+    <rect x="469.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="43" data-gate="3"/>
+    <rect x="475.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="44" data-gate="3"/>
+    <rect x="481.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="45" data-gate="1"/>
+    <rect x="487.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="46" data-gate="3"/>
+    <rect x="493.0" y="4" width="4" height="4" fill="#3B423F" class="cell cell--killed" data-trial="47" data-gate="1"/>
+    <rect x="499.0" y="4" width="4" height="4" fill="#9BE15D" class="cell cell--kept" data-trial="48" data-gate="5"/>
+  </g></svg></div>
+<div class="frame frame--footer cell-field" data-enter="retype log seal" data-enter-parallel>
+<div class="frame__title"><span>astroquanta · run complete</span><span data-clock>04:12:00</span></div>
+<p class="frame__lead">Every route on this site, as log lines.</p>
+<div class="footer-grid">
+<nav aria-label="Footer"><ol class="footer-routes"><li><a href="/">home</a></li><li><a href="/plans">plans</a></li><li class="is-current"><a href="/sweep">sweep</a></li><li><a href="/about">about</a></li><li><a href="/blog">blog</a></li><li><a href="/contact">contact</a></li><li><a href="/terms-of-service">terms</a></li><li><a href="/privacy-policy">privacy</a></li></ol></nav>
+<div class="seal"><div class="seal-slot" role="img" aria-label="The denominator seal. A grid of 48 small cells inside a square hairline, 42 grey and 6 green, with the fraction 6 of 48 beneath and the word astroquanta under that."><svg class="seal-svg" viewBox="0 0 130 102" width="130" height="102" aria-hidden="true" focusable="false" data-kit="denominator-seal"><rect x="0.5" y="0.5" width="129" height="101" fill="none" stroke="#1F2422" stroke-width="1" class="seal-box"/>
+  <g class="seal-grid" data-cadence-ms="40" data-order="gate">
+    <rect x="10" y="10" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="01" data-gate="1" data-gate-name="point in time"><title>trial 01, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="24" y="10" width="12" height="12" fill="#9BE15D" class="cell cell--kept" data-trial="02" data-gate="5" data-gate-name="kept"><title>trial 02, kept: haircut Sharpe beside the raw one</title></rect>
+    <rect x="38" y="10" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="03" data-gate="1" data-gate-name="point in time"><title>trial 03, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="52" y="10" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="04" data-gate="1" data-gate-name="point in time"><title>trial 04, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="66" y="10" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="05" data-gate="3" data-gate-name="costs"><title>trial 05, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="80" y="10" width="12" height="12" fill="#9BE15D" class="cell cell--kept" data-trial="06" data-gate="5" data-gate-name="kept"><title>trial 06, kept: haircut Sharpe beside the raw one</title></rect>
+    <rect x="94" y="10" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="07" data-gate="3" data-gate-name="costs"><title>trial 07, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="108" y="10" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="08" data-gate="1" data-gate-name="point in time"><title>trial 08, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="10" y="24" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="09" data-gate="3" data-gate-name="costs"><title>trial 09, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="24" y="24" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="10" data-gate="3" data-gate-name="costs"><title>trial 10, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="38" y="24" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="11" data-gate="1" data-gate-name="point in time"><title>trial 11, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="52" y="24" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="12" data-gate="1" data-gate-name="point in time"><title>trial 12, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="66" y="24" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="13" data-gate="3" data-gate-name="costs"><title>trial 13, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="80" y="24" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="14" data-gate="3" data-gate-name="costs"><title>trial 14, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="94" y="24" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="15" data-gate="1" data-gate-name="point in time"><title>trial 15, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="108" y="24" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="16" data-gate="1" data-gate-name="point in time"><title>trial 16, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="10" y="38" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="17" data-gate="3" data-gate-name="costs"><title>trial 17, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="24" y="38" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="18" data-gate="1" data-gate-name="point in time"><title>trial 18, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="38" y="38" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="19" data-gate="1" data-gate-name="point in time"><title>trial 19, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="52" y="38" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="20" data-gate="3" data-gate-name="costs"><title>trial 20, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="66" y="38" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="21" data-gate="3" data-gate-name="costs"><title>trial 21, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="80" y="38" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="22" data-gate="3" data-gate-name="costs"><title>trial 22, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="94" y="38" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="23" data-gate="4" data-gate-name="capacity"><title>trial 23, killed, capacity: under 40 million dollars before impact</title></rect>
+    <rect x="108" y="38" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="24" data-gate="4" data-gate-name="capacity"><title>trial 24, killed, capacity: under 40 million dollars before impact</title></rect>
+    <rect x="10" y="52" width="12" height="12" fill="#9BE15D" class="cell cell--kept" data-trial="25" data-gate="5" data-gate-name="kept"><title>trial 25, kept: haircut Sharpe beside the raw one</title></rect>
+    <rect x="24" y="52" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="26" data-gate="4" data-gate-name="capacity"><title>trial 26, killed, capacity: under 40 million dollars before impact</title></rect>
+    <rect x="38" y="52" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="27" data-gate="4" data-gate-name="capacity"><title>trial 27, killed, capacity: under 40 million dollars before impact</title></rect>
+    <rect x="52" y="52" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="28" data-gate="4" data-gate-name="capacity"><title>trial 28, killed, capacity: under 40 million dollars before impact</title></rect>
+    <rect x="66" y="52" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="29" data-gate="1" data-gate-name="point in time"><title>trial 29, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="80" y="52" width="12" height="12" fill="#9BE15D" class="cell cell--kept" data-trial="30" data-gate="5" data-gate-name="kept"><title>trial 30, kept: haircut Sharpe beside the raw one</title></rect>
+    <rect x="94" y="52" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="31" data-gate="1" data-gate-name="point in time"><title>trial 31, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="108" y="52" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="32" data-gate="1" data-gate-name="point in time"><title>trial 32, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="10" y="66" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="33" data-gate="3" data-gate-name="costs"><title>trial 33, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="24" y="66" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="34" data-gate="3" data-gate-name="costs"><title>trial 34, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="38" y="66" width="12" height="12" fill="#9BE15D" class="cell cell--kept" data-trial="35" data-gate="5" data-gate-name="kept"><title>trial 35, kept: haircut Sharpe beside the raw one</title></rect>
+    <rect x="52" y="66" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="36" data-gate="3" data-gate-name="costs"><title>trial 36, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="66" y="66" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="37" data-gate="1" data-gate-name="point in time"><title>trial 37, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="80" y="66" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="38" data-gate="4" data-gate-name="capacity"><title>trial 38, killed, capacity: under 40 million dollars before impact</title></rect>
+    <rect x="94" y="66" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="39" data-gate="4" data-gate-name="capacity"><title>trial 39, killed, capacity: under 40 million dollars before impact</title></rect>
+    <rect x="108" y="66" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="40" data-gate="3" data-gate-name="costs"><title>trial 40, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="10" y="80" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="41" data-gate="4" data-gate-name="capacity"><title>trial 41, killed, capacity: under 40 million dollars before impact</title></rect>
+    <rect x="24" y="80" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="42" data-gate="1" data-gate-name="point in time"><title>trial 42, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="38" y="80" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="43" data-gate="3" data-gate-name="costs"><title>trial 43, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="52" y="80" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="44" data-gate="3" data-gate-name="costs"><title>trial 44, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="66" y="80" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="45" data-gate="1" data-gate-name="point in time"><title>trial 45, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="80" y="80" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="46" data-gate="3" data-gate-name="costs"><title>trial 46, killed, costs: edge under 4 bps against a 7 bp round trip</title></rect>
+    <rect x="94" y="80" width="12" height="12" fill="#3B423F" class="cell cell--killed" data-trial="47" data-gate="1" data-gate-name="point in time"><title>trial 47, killed, look ahead: restated fundamentals inside the fit window</title></rect>
+    <rect x="108" y="80" width="12" height="12" fill="#9BE15D" class="cell cell--kept" data-trial="48" data-gate="5" data-gate-name="kept"><title>trial 48, kept: haircut Sharpe beside the raw one</title></rect>
+  </g></svg></div><p class="seal-fraction">6 / 48</p><p class="seal-word">astroquanta</p></div>
+<div class="identity">
+<address>[BUSINESS NAME]<br>[Physical Address]<br><a href="tel:[PHONE NUMBER]">[PHONE NUMBER]</a><br><a href="mailto:support@astroquanta.com">support@astroquanta.com</a></address>
+<p class="identity-line">Astroquanta is research software. It does not manage money, hold client assets, execute orders or recommend any security.</p>
+<p class="legal-links"><a href="/terms-of-service">Terms of Service</a> · <a href="/privacy-policy">Privacy Policy</a></p>
+<p class="copyright">© 2026 [BUSINESS NAME]. All rights reserved.</p>
+<div class="footer-lines muted"></div>
+</div>
+</div>
+<p class="frame__foot dim">Every Sharpe, capacity and curve on this site is illustrative output of the canonical run and the simulator. None is a result achieved by any customer.</p>
+</div>
+</footer>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<div class="help-frame frame" id="help-frame" role="dialog" aria-modal="true" aria-labelledby="help-frame-title" hidden>
+<div class="frame__title"><span id="help-frame-title">astroquanta · shortcuts</span><span data-clock>04:12:00</span></div>
+<p class="frame__lead">Two keys, one route. Press g, then the route's first letter.</p>
+<ol class="frame__rows"><li><span class="glyph" aria-hidden="true">&gt;</span><kbd>g h</kbd><span class="arrow" aria-hidden="true">→</span><span class="detail">home → /</span></li><li><span class="glyph" aria-hidden="true">&gt;</span><kbd>g p</kbd><span class="arrow" aria-hidden="true">→</span><span class="detail">plans → /plans</span></li><li><span class="glyph" aria-hidden="true">&gt;</span><kbd>g s</kbd><span class="arrow" aria-hidden="true">→</span><span class="detail">sweep → /sweep</span></li><li><span class="glyph" aria-hidden="true">&gt;</span><kbd>g a</kbd><span class="arrow" aria-hidden="true">→</span><span class="detail">about → /about</span></li><li><span class="glyph" aria-hidden="true">&gt;</span><kbd>g b</kbd><span class="arrow" aria-hidden="true">→</span><span class="detail">blog → /blog</span></li><li><span class="glyph" aria-hidden="true">&gt;</span><kbd>g c</kbd><span class="arrow" aria-hidden="true">→</span><span class="detail">contact → /contact</span></li><li><span class="glyph" aria-hidden="true">&gt;</span><kbd>?</kbd><span class="arrow" aria-hidden="true">→</span><span class="detail">this frame open or close</span></li><li><span class="glyph" aria-hidden="true">&gt;</span><kbd>esc</kbd><span class="arrow" aria-hidden="true">→</span><span class="detail">close the frame or the drawer</span></li></ol>
+<p class="frame__foot">Shortcuts pause while a field has focus.</p>
+<button type="button" class="btn help-frame__close" data-help-close>Close</button>
+</div>
+<div id="kit-tip" class="tooltip kit-tip" role="tooltip" hidden></div>
+<script src="/assets/js/site.min.js?v=2681284b" defer></script><script src="/assets/js/sweep.min.js?v=2681284b" defer></script><script src="/assets/js/motion.min.js?v=2681284b" defer></script><script src="/assets/js/entrances.min.js?v=2681284b" defer></script>
+</body>
+</html>
