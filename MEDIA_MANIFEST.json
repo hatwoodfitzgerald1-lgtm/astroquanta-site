@@ -1,0 +1,1244 @@
+{
+  "manifest_version": 2,
+  "brand": "Astroquanta",
+  "domain": "astroquanta.com",
+  "generated_at": "2026-09-18",
+  "routing_decision": {
+    "path": "shot_routing.md non physical path: the offer visual spec replaces the product rows; hero plate, lifestyle, people and video minimums are not applicable to a Tier 1 procedural concept site whose brief bans photographic imagery",
+    "stock_sourced": false,
+    "ai_generated": false,
+    "browser_used": false,
+    "statement": "Every asset is brand owned and produced in the sandbox from the offering spec and the art direction spec. No stock base was sourced, qualified or registered; no AI image tool was driven; Chrome was not used. The product image is the DOM rendered console frame; these PNGs are its OG and social stand ins only."
+  },
+  "grade_recipe": {
+    "id": "none, native palette",
+    "file": null,
+    "decision": "grade_and_unify.py NOT run: every raster is drawn directly in the six brand palette values (97 to 99 percent exact palette pixels, remainder anti aliasing); a LUT, grain or vignette would violate the art direction (no grain, no scanlines, no noise, no vignette)"
+  },
+  "font": {
+    "family": "IBM Plex Mono 400/500",
+    "source": "npm @ibm/plex-mono 2.5.0, SIL Open Font License 1.1, woff converted to ttf with fontTools for Pillow",
+    "substitution": "none"
+  },
+  "palette": {
+    "ground": "#0A0C0B",
+    "hairline": "#1F2422",
+    "grey1": "#3B423F",
+    "grey2": "#7E8682",
+    "grey3": "#D8DBD8",
+    "kept": "#9BE15D"
+  },
+  "assets": [
+    {
+      "filename": "/public/assets/frames/frame-run-1600w.webp",
+      "source_url": "foundry://master/astroquanta-frame-run",
+      "license": "Brand-owned generated master",
+      "usage_location": "OG and social stand in for frame A (the run). Home hero and About render the frame in DOM; this PNG is never placed on a page. Not used as an og:image since pass 6 round 2 (About takes og-default, 1200 by 630).",
+      "shot_type": "product_studio",
+      "base_source_url": "foundry://master/astroquanta-frame-run",
+      "base_license": "Brand-owned generated master",
+      "base_download_count_at_selection": null,
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "pillow (foundry/build_kit.py render_frame)",
+          "prompt_or_params": {
+            "frame": "run",
+            "contents": "offering_spec.md section 5.4 frame A, verbatim",
+            "chrome": "offering_spec.md section 5.3: 720 CSS px, 1px hairline border, 28px title bar, five column grid 2ch/24ch/3ch/fluid/8ch, 1.6 line height, block cursor on the last row, foot line, compliance strip on frames with figures",
+            "scale": 2,
+            "font": "IBM Plex Mono 400/500",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            },
+            "companion": null
+          }
+        },
+        {
+          "pass": "reframe",
+          "tool": "pillow (foundry/build_kit.py compose)",
+          "prompt_or_params": {
+            "canvas": [
+              1600,
+              1000
+            ],
+            "fill": "#0A0C0B",
+            "placement": "frame centred"
+          }
+        }
+      ],
+      "encoding": {
+        "tool": "image-foundry/scripts/optimize_assets.py",
+        "params": {
+          "quality": 82,
+          "avif_quality": 60,
+          "widths": [
+            480,
+            960,
+            1440,
+            1600
+          ],
+          "metadata": "stripped"
+        }
+      },
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:bad1f54d5f91a73d8af72407e3e5c17ef675037a877977af4a8253a0e69eff21",
+      "variants": [
+        "/public/assets/frames/frame-run-480w.webp",
+        "/public/assets/frames/frame-run-480w.avif",
+        "/public/assets/frames/frame-run-960w.webp",
+        "/public/assets/frames/frame-run-960w.avif",
+        "/public/assets/frames/frame-run-1440w.webp",
+        "/public/assets/frames/frame-run-1440w.avif",
+        "/public/assets/frames/frame-run-1600w.avif",
+        "/public/assets/frames/frame-run.png"
+      ],
+      "master_png": "/public/assets/frames/frame-run.png",
+      "verified_by": {
+        "critic_round": 1,
+        "critic_pass": "pass-0-r1",
+        "result": "pass"
+      },
+      "reverse_search_output_result": {
+        "engine": "not_run",
+        "result": "no_matches",
+        "date": "2026-09-18",
+        "note": "no stock base exists; the file is a procedural render of the offering spec text in the brand palette, so there is nothing for a reverse search to resolve to"
+      },
+      "palette_check": "97 to 98 percent of pixels are exact brand palette values; the remainder is text anti aliasing between palette values; accent covers under 0.3 percent of the frame"
+    },
+    {
+      "filename": "/public/assets/frames/frame-trial-log-1600w.webp",
+      "source_url": "foundry://master/astroquanta-frame-trial-log",
+      "license": "Brand-owned generated master",
+      "usage_location": "OG and social stand in for frame B (the trial log). Home section 01 and /sweep render the frame in DOM. Not used as an og:image since pass 6 round 2 (/sweep takes og-sweep, 1200 by 630).",
+      "shot_type": "product_studio",
+      "base_source_url": "foundry://master/astroquanta-frame-trial-log",
+      "base_license": "Brand-owned generated master",
+      "base_download_count_at_selection": null,
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "pillow (foundry/build_kit.py render_frame)",
+          "prompt_or_params": {
+            "frame": "trial-log",
+            "contents": "offering_spec.md section 5.4 frame B, verbatim",
+            "chrome": "offering_spec.md section 5.3: 720 CSS px, 1px hairline border, 28px title bar, five column grid 2ch/24ch/3ch/fluid/8ch, 1.6 line height, block cursor on the last row, foot line, compliance strip on frames with figures",
+            "scale": 2,
+            "font": "IBM Plex Mono 400/500",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            },
+            "companion": "trial grid 48 cells (42 grey 1, 6 kept), positions seeded from run 04:12"
+          }
+        },
+        {
+          "pass": "reframe",
+          "tool": "pillow (foundry/build_kit.py compose)",
+          "prompt_or_params": {
+            "canvas": [
+              1600,
+              1000
+            ],
+            "fill": "#0A0C0B",
+            "placement": "frame centred"
+          }
+        }
+      ],
+      "encoding": {
+        "tool": "image-foundry/scripts/optimize_assets.py",
+        "params": {
+          "quality": 82,
+          "avif_quality": 60,
+          "widths": [
+            480,
+            960,
+            1440,
+            1600
+          ],
+          "metadata": "stripped"
+        }
+      },
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:3cd26db70e9c823e41d556bbac8a07996efd114c906f9250fa422172a8b16aa8",
+      "variants": [
+        "/public/assets/frames/frame-trial-log-480w.webp",
+        "/public/assets/frames/frame-trial-log-480w.avif",
+        "/public/assets/frames/frame-trial-log-960w.webp",
+        "/public/assets/frames/frame-trial-log-960w.avif",
+        "/public/assets/frames/frame-trial-log-1440w.webp",
+        "/public/assets/frames/frame-trial-log-1440w.avif",
+        "/public/assets/frames/frame-trial-log-1600w.avif",
+        "/public/assets/frames/frame-trial-log.png"
+      ],
+      "master_png": "/public/assets/frames/frame-trial-log.png",
+      "verified_by": {
+        "critic_round": 1,
+        "critic_pass": "pass-0-r1",
+        "result": "pass"
+      },
+      "reverse_search_output_result": {
+        "engine": "not_run",
+        "result": "no_matches",
+        "date": "2026-09-18",
+        "note": "no stock base exists; the file is a procedural render of the offering spec text in the brand palette, so there is nothing for a reverse search to resolve to"
+      },
+      "palette_check": "97 to 98 percent of pixels are exact brand palette values; the remainder is text anti aliasing between palette values; accent covers under 0.3 percent of the frame"
+    },
+    {
+      "filename": "/public/assets/frames/frame-candidate-1600w.webp",
+      "source_url": "foundry://master/astroquanta-frame-candidate",
+      "license": "Brand-owned generated master",
+      "usage_location": "OG and social stand in for frame C (the candidate). Plans and the /sweep result render the frame in DOM. Not used as an og:image since pass 6 round 2 (/plans takes og-plans, 1200 by 630).",
+      "shot_type": "product_studio",
+      "base_source_url": "foundry://master/astroquanta-frame-candidate",
+      "base_license": "Brand-owned generated master",
+      "base_download_count_at_selection": null,
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "pillow (foundry/build_kit.py render_frame)",
+          "prompt_or_params": {
+            "frame": "candidate",
+            "contents": "offering_spec.md section 5.4 frame C, verbatim",
+            "chrome": "offering_spec.md section 5.3: 720 CSS px, 1px hairline border, 28px title bar, five column grid 2ch/24ch/3ch/fluid/8ch, 1.6 line height, block cursor on the last row, foot line, compliance strip on frames with figures",
+            "scale": 2,
+            "font": "IBM Plex Mono 400/500",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            },
+            "companion": "equity curve 64px, in sample grey 2, walk forward kept, seeded from candidate 34"
+          }
+        },
+        {
+          "pass": "reframe",
+          "tool": "pillow (foundry/build_kit.py compose)",
+          "prompt_or_params": {
+            "canvas": [
+              1600,
+              1000
+            ],
+            "fill": "#0A0C0B",
+            "placement": "frame centred"
+          }
+        }
+      ],
+      "encoding": {
+        "tool": "image-foundry/scripts/optimize_assets.py",
+        "params": {
+          "quality": 82,
+          "avif_quality": 60,
+          "widths": [
+            480,
+            960,
+            1440,
+            1600
+          ],
+          "metadata": "stripped"
+        }
+      },
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:b80b1613615dd916803107a3f6d426e22343131adbd9abbf3b327c02a43c0862",
+      "variants": [
+        "/public/assets/frames/frame-candidate-480w.webp",
+        "/public/assets/frames/frame-candidate-480w.avif",
+        "/public/assets/frames/frame-candidate-960w.webp",
+        "/public/assets/frames/frame-candidate-960w.avif",
+        "/public/assets/frames/frame-candidate-1440w.webp",
+        "/public/assets/frames/frame-candidate-1440w.avif",
+        "/public/assets/frames/frame-candidate-1600w.avif",
+        "/public/assets/frames/frame-candidate.png"
+      ],
+      "master_png": "/public/assets/frames/frame-candidate.png",
+      "verified_by": {
+        "critic_round": 1,
+        "critic_pass": "pass-0-r1",
+        "result": "pass"
+      },
+      "reverse_search_output_result": {
+        "engine": "not_run",
+        "result": "no_matches",
+        "date": "2026-09-18",
+        "note": "no stock base exists; the file is a procedural render of the offering spec text in the brand palette, so there is nothing for a reverse search to resolve to"
+      },
+      "palette_check": "97 to 98 percent of pixels are exact brand palette values; the remainder is text anti aliasing between palette values; accent covers under 0.3 percent of the frame"
+    },
+    {
+      "filename": "/public/assets/frames/og-home.png",
+      "source_url": "foundry://master/astroquanta-og-home",
+      "license": "Brand-owned generated master",
+      "usage_location": "og:image and twitter:image for Home (1200 by 630): the run frame at 1x beside the wordmark, the fraction 6 / 48 and the cell rule",
+      "shot_type": "product_studio",
+      "base_source_url": "foundry://master/astroquanta-og-home",
+      "base_license": "Brand-owned generated master",
+      "base_download_count_at_selection": null,
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "pillow (foundry/build_kit.py)",
+          "prompt_or_params": {
+            "source": "the run frame rendered at scale 1 (og-home) or the seal grid drawn from GATE (og-default)",
+            "font": "IBM Plex Mono 400/500",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            }
+          }
+        },
+        {
+          "pass": "composite",
+          "tool": "pillow (foundry/build_kit.py build_og)",
+          "prompt_or_params": {
+            "layers": [
+              "run frame at 1x, right",
+              "wordmark astroquanta and domain, grey 3 and grey 2",
+              "fraction 6 / 48 at 96px, numerator kept green",
+              "cell rule 48 at 4px in seal positions",
+              "foot lines: Trial count 48. Haircut 0.18. The denominator travelled with the result."
+            ],
+            "canvas": [
+              1200,
+              630
+            ]
+          }
+        }
+      ],
+      "encoding": {
+        "tool": "pillow PNG optimize=True",
+        "note": "kept as PNG on purpose: social crawlers do not all accept WebP or AVIF for og:image"
+      },
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:18c48d1e86e1937343279e3c5f757fa81e0ada1670f9ef3ad82e9c634736edcc",
+      "verified_by": {
+        "critic_round": 1,
+        "critic_pass": "pass-0-r1",
+        "result": "pass"
+      },
+      "reverse_search_output_result": {
+        "engine": "not_run",
+        "result": "no_matches",
+        "date": "2026-09-18",
+        "note": "no stock base exists; the file is a procedural render of the offering spec text in the brand palette, so there is nothing for a reverse search to resolve to"
+      }
+    },
+    {
+      "filename": "/public/assets/frames/og-default.png",
+      "source_url": "foundry://master/astroquanta-og-default",
+      "license": "Brand-owned generated master",
+      "usage_location": "og:image and twitter:image default for every other route (1200 by 630): the seal grid at 3x, the fraction 6 / 48, one line of positioning and the illustrative output line",
+      "shot_type": "product_studio",
+      "base_source_url": "foundry://master/astroquanta-og-default",
+      "base_license": "Brand-owned generated master",
+      "base_download_count_at_selection": null,
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "pillow (foundry/build_kit.py)",
+          "prompt_or_params": {
+            "source": "the run frame rendered at scale 1 (og-home) or the seal grid drawn from GATE (og-default)",
+            "font": "IBM Plex Mono 400/500",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            }
+          }
+        },
+        {
+          "pass": "composite",
+          "tool": "pillow (foundry/build_kit.py build_og)",
+          "prompt_or_params": {
+            "layers": [
+              "seal grid 8 by 6 at 3x inside a hairline box",
+              "fraction 6 / 48 at 152px, numerator kept green",
+              "two grey 2 lines: specifications run overnight; six survived / point in time, walk forward, costs and capacity.",
+              "foot lines: Agentic quant research with the trial count attached. / Illustrative output. Simulated results are hypothetical."
+            ],
+            "canvas": [
+              1200,
+              630
+            ]
+          }
+        }
+      ],
+      "encoding": {
+        "tool": "pillow PNG optimize=True",
+        "note": "kept as PNG on purpose: social crawlers do not all accept WebP or AVIF for og:image"
+      },
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:7c07d5215457032fc316ac9c530cc5fd48e281e891456e816e93a4890100062a",
+      "verified_by": {
+        "critic_round": 1,
+        "critic_pass": "pass-0-r1",
+        "result": "pass"
+      },
+      "reverse_search_output_result": {
+        "engine": "not_run",
+        "result": "no_matches",
+        "date": "2026-09-18",
+        "note": "no stock base exists; the file is a procedural render of the offering spec text in the brand palette, so there is nothing for a reverse search to resolve to"
+      }
+    },
+    {
+      "filename": "/public/assets/frames/og-plans.png",
+      "source_url": "foundry://master/astroquanta-og-plans",
+      "license": "Brand-owned generated master",
+      "usage_location": "og:image and twitter:image for /plans (1200 by 630): the three plan columns, Desk, Research (MOST POPULAR) and Fund, with their prices and units, the seats as cells, the fraction 6 / 48 and the footnote line",
+      "shot_type": "product_studio",
+      "base_source_url": "foundry://master/astroquanta-og-plans",
+      "base_license": "Brand-owned generated master",
+      "base_download_count_at_selection": null,
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "pillow (foundry/build_og_extra.py)",
+          "prompt_or_params": {
+            "source": "the plan columns and the seat cells (og-plans) or the trial grid drawn from GATE (og-sweep), the kit palette and IBM Plex Mono",
+            "font": "IBM Plex Mono 400/500",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            }
+          }
+        },
+        {
+          "pass": "composite",
+          "tool": "pillow (foundry/build_og_extra.py)",
+          "prompt_or_params": {
+            "layers": [
+              "three hairline plan columns with title bars",
+              "prices $1,800/mo, $7,500/mo, Quoted/yr at 56px, units grey 2",
+              "seats as cells: one outlined, five kept, a 48 cell outlined field",
+              "fraction 6 / 48 at 64px",
+              "foot line: Two purchasable today, one quoted. Prices in USD."
+            ],
+            "canvas": [
+              1200,
+              630
+            ]
+          }
+        }
+      ],
+      "encoding": {
+        "tool": "pillow PNG optimize=True",
+        "note": "kept as PNG on purpose: social crawlers do not all accept WebP or AVIF for og:image"
+      },
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:2db99a13dbcbab4c35adb5f0c7ca02483c1fe331dbe6e37c4ee8238a7f607618",
+      "verified_by": {
+        "critic_round": 6,
+        "critic_pass": "pass-6-round-2",
+        "result": "pass"
+      },
+      "reverse_search_output_result": {
+        "engine": "not_run",
+        "result": "no_matches",
+        "date": "2026-09-19",
+        "note": "no stock base exists; the file is a procedural render of the offering spec text in the brand palette, so there is nothing for a reverse search to resolve to"
+      }
+    },
+    {
+      "filename": "/public/assets/frames/og-sweep.png",
+      "source_url": "foundry://master/astroquanta-og-sweep",
+      "license": "Brand-owned generated master",
+      "usage_location": "og:image and twitter:image for /sweep (1200 by 630): the trial grid at 4x, 42 grey and 6 kept, beside 48 \u2192 6, the simulator line and the four gate rows with their counts",
+      "shot_type": "product_studio",
+      "base_source_url": "foundry://master/astroquanta-og-sweep",
+      "base_license": "Brand-owned generated master",
+      "base_download_count_at_selection": null,
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "pillow (foundry/build_og_extra.py)",
+          "prompt_or_params": {
+            "source": "the plan columns and the seat cells (og-plans) or the trial grid drawn from GATE (og-sweep), the kit palette and IBM Plex Mono",
+            "font": "IBM Plex Mono 400/500",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            }
+          }
+        },
+        {
+          "pass": "composite",
+          "tool": "pillow (foundry/build_og_extra.py)",
+          "prompt_or_params": {
+            "layers": [
+              "trial grid at 4x in a hairline box, 42 grey 1 and 6 kept in the seal positions",
+              "48 \u2192 6 at 120px, the 6 kept green",
+              "the trial sweep simulator, Choose N. Watch what dies at each gate.",
+              "four gate rows with counts 48, 31, 14, 6 and the killed counts",
+              "foot lines: synthetic model, illustrative output"
+            ],
+            "canvas": [
+              1200,
+              630
+            ]
+          }
+        }
+      ],
+      "encoding": {
+        "tool": "pillow PNG optimize=True",
+        "note": "kept as PNG on purpose: social crawlers do not all accept WebP or AVIF for og:image"
+      },
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:5fb29d0d330c5d34999512a8c2f53ec12f1355c5e984e1fb80a292cd416f955e",
+      "verified_by": {
+        "critic_round": 6,
+        "critic_pass": "pass-6-round-2",
+        "result": "pass"
+      },
+      "reverse_search_output_result": {
+        "engine": "not_run",
+        "result": "no_matches",
+        "date": "2026-09-19",
+        "note": "no stock base exists; the file is a procedural render of the offering spec text in the brand palette, so there is nothing for a reverse search to resolve to"
+      }
+    }
+  ],
+  "graphic_kit": [
+    {
+      "filename": "/public/assets/kit/trial-cell.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "motif, unrun state (hairline outline)",
+      "usage_location": "lattice cell, DOM trial grid, loader gauge, favicon unit, seal unit; every unrun cell on the site",
+      "animates": "outline appears Stepped (no fade); the fill state Latches in 120ms when the cell is run",
+      "base_source_url": "foundry://kit/astroquanta-trial-cell",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "spec": "art_direction_spec.md section 16",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            },
+            "module_px": 12
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:66c5fdb9a8fc4cacee4581cf416eae19d891c1befd4a53172540a3dee9744de8",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/trial-cell-killed.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "motif, killed state (grey 1 fill)",
+      "usage_location": "trial grid, lattice, seal, cell rule, loader after a gate",
+      "animates": "fill Latches in 120ms, arriving 40ms after the previous cell in gate order",
+      "base_source_url": "foundry://kit/astroquanta-trial-cell-killed",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "spec": "art_direction_spec.md section 16",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            },
+            "module_px": 12
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:0397b5d84941b7f60f371c7ee099cd3e6c5317705c9d1a4be14b55bf3db581c4",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/trial-cell-kept.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "motif, kept state (accent fill; one of the three permitted accent uses)",
+      "usage_location": "the six survivors in every grid, the KEPT icons",
+      "animates": "Settle over 360ms, always last in the sequence",
+      "base_source_url": "foundry://kit/astroquanta-trial-cell-kept",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "spec": "art_direction_spec.md section 16",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            },
+            "module_px": 12
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:4eff78565b35b1f17b2fcbb069f3b8214b777d05f1396c6fc45159d176cade5b",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/trial-cell-live.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "motif, live state (grey 3 outline; the loader gauge and the lattice rim before the cull)",
+      "usage_location": "loader gauge, lattice cells before a gate",
+      "animates": "outline appears Stepped as real load advances; rim breathes on a 6s sine in the lattice only",
+      "base_source_url": "foundry://kit/astroquanta-trial-cell-live",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "spec": "art_direction_spec.md section 16",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            },
+            "module_px": 12
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:2d608c25801b8e617d7f78f85839a2514a26ee262eb13d9d0a9c4afdf0d51a85",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/denominator-seal.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "seal, 6 / 48",
+      "usage_location": "About closing block, order confirmation beside DONE, footer, favicon source",
+      "animates": "cells fill one at a time in gate order (point in time 17, walk forward 0, costs 17, capacity 8) at 40ms, the six survivors Settle last over 360ms, then the fraction and wordmark appear Stepped; the .seal-grid group carries data-cadence-ms and data-order",
+      "base_source_url": "foundry://kit/astroquanta-denominator-seal",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "spec": "art_direction_spec.md section 16",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            },
+            "module_px": 12
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:e328d78073d100458b05d703292c4d8a1ddbe8ef976eaa8fb1225245533a8b7a",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/denominator-seal-none.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "seal, 404 state, 0 / 48",
+      "usage_location": "404 page",
+      "animates": "all 48 cells fill grey at 40ms; nothing turns green",
+      "base_source_url": "foundry://kit/astroquanta-denominator-seal-none",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "spec": "art_direction_spec.md section 16",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            },
+            "module_px": 12
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:a60e2642829699504e9495c7213a94d1c2ea2f4879b35ea860f5caa0614eac06",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/favicon.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "favicon, 16 by 12 reduction of the seal at 2px cells on a 16 by 16 ground",
+      "usage_location": "browser tab",
+      "animates": "never",
+      "base_source_url": "foundry://kit/astroquanta-favicon",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "spec": "art_direction_spec.md section 16",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            },
+            "module_px": 12
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:6bec3639637fe5b4efb6850b8879391f816c3f38151f8ef26184074383be4f68",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/divider-gates.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "divider 1, the gate rule (hairline broken by a labelled 2ch gap; swap the label text per section: 01 \u00b7 the run, 02 \u00b7 the log, 03 \u00b7 the candidate)",
+      "usage_location": "between Home sections",
+      "animates": "the two hairlines draw to full width with Settle over 900ms from the label outward; label appears Stepped",
+      "base_source_url": "foundry://kit/astroquanta-divider-gates",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "spec": "art_direction_spec.md section 16",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            },
+            "module_px": 12
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:671f521791ea204ba1855c455d08d8d2f5f68081ee7ec27f42fcea74010ab1d1",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/divider-ledger.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "divider 2, the cell rule (48 cells at 4px, 42 grey and 6 kept in the seal positions)",
+      "usage_location": "before footers, between blog post sections",
+      "animates": "cells fill left to right at 40ms in gate order; survivors last",
+      "base_source_url": "foundry://kit/astroquanta-divider-ledger",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "spec": "art_direction_spec.md section 16",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            },
+            "module_px": 12
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:9a507dfc287322f715b3a6405d054f2442f16f8bcaadd0ca682a6e9990cdf4db",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/divider-rule.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "divider 3, the prompt rule (prompt glyph then a hairline to the right margin)",
+      "usage_location": "above frames, above the Plans cards",
+      "animates": "glyph slides in 1ch with Latch over 120ms, hairline draws right with Settle over 900ms",
+      "base_source_url": "foundry://kit/astroquanta-divider-rule",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "spec": "art_direction_spec.md section 16",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            },
+            "module_px": 12
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:fa58d1f9989f1acbeba4ca80ec1702e8e617dd3fa82b994881d60e41b6cf0bdc",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/numeral-treatment.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "oversized numeral treatment reference ($310M, unit welded, label beneath); the builder reproduces it in DOM type, this file is the visual spec",
+      "usage_location": "stats strip on Home and /sweep, plan prices, the Fraction",
+      "animates": "digits step vertically one slot per 120ms with Latch (odometer clip, never a roll); the numerator turns accent only at its final value",
+      "base_source_url": "foundry://kit/astroquanta-numeral-treatment",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "spec": "art_direction_spec.md section 16",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            },
+            "module_px": 12
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:9fb23f59e383e20718a01a0a8b23a5751c8ccbb54f3d0579d0c70c5d1d485273",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/texture-cell-field.svg",
+      "shot_type": "texture",
+      "kit_role": "texture, tiling 12px cell field in hairline colour at 40 percent opacity (art direction section 16)",
+      "usage_location": "behind the frames of About and the legal pages, as a repeating background-image",
+      "animates": "never; static",
+      "base_source_url": "foundry://kit/astroquanta-texture-cell-field",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "spec": "art_direction_spec.md section 16",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            },
+            "module_px": 12
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:6726f3167a62b89256be592058b44021e4109ebc8ac0eeed8646a841586545bb",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/curves/equity-curve-candidate-34.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "equity curve for candidate id 34 (in sample grey 2, walk forward accent, 1px, no fill, no markers)",
+      "usage_location": "inside frame C at 64px height, alone at 120px on Plans and the blog",
+      "animates": "draws left to right once over 600ms, then holds (stroke-dasharray reveal or clip path)",
+      "base_source_url": "foundry://kit/astroquanta-equity-curve-candidate-34",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "spec": "art_direction_spec.md section 16",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            },
+            "module_px": 12
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:06a157aa633297fc3dbf22f0520208f9fc9d4c468c311232d431e9082b61491e",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/curves/trial-grid-48.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "the DOM trial grid reference, 48 cells with gate legend, positions seeded from run 04:12",
+      "usage_location": "inside frame B above the rows, the mobile hero, the /sweep empty state (as outlines)",
+      "animates": "cells fill in gate order at 40ms apart; each cell carries data-trial, data-gate and a title for the mono tooltip",
+      "base_source_url": "foundry://kit/astroquanta-trial-grid-48",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "spec": "art_direction_spec.md section 16",
+            "palette": {
+              "ground": "#0A0C0B",
+              "hairline": "#1F2422",
+              "grey1": "#3B423F",
+              "grey2": "#7E8682",
+              "grey3": "#D8DBD8",
+              "kept": "#9BE15D"
+            },
+            "module_px": 12
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:05f77f7de735642b88ae6562e103c6ec6f40631b76396785901e706f3ff100ca",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/icons/dataset.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "icon: dataset onboarding",
+      "usage_location": "spec table on Home, plan card inclusion rows, blog post headers, About process section; never decorative on its own",
+      "animates": "icons appear Stepped with their row; no draw on, no hover colour (the accent is never an icon colour)",
+      "base_source_url": "foundry://kit/astroquanta-icon-dataset",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "grid_px": 24,
+            "stroke_px": 1.5,
+            "stroke": "#D8DBD8",
+            "corners": "square"
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:61c0bce572a71afd00a53b59a42ac5d437ecdd790746edf34b1d83e28f8d3a80",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/icons/point-in-time.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "icon: point in time gate",
+      "usage_location": "spec table on Home, plan card inclusion rows, blog post headers, About process section; never decorative on its own",
+      "animates": "icons appear Stepped with their row; no draw on, no hover colour (the accent is never an icon colour)",
+      "base_source_url": "foundry://kit/astroquanta-icon-point-in-time",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "grid_px": 24,
+            "stroke_px": 1.5,
+            "stroke": "#D8DBD8",
+            "corners": "square"
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:ed31b9d2804dcf9898bbd0c5aebff5e8e23e3f9628d68f9de9f44690d06a94a4",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/icons/walk-forward.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "icon: walk forward gate",
+      "usage_location": "spec table on Home, plan card inclusion rows, blog post headers, About process section; never decorative on its own",
+      "animates": "icons appear Stepped with their row; no draw on, no hover colour (the accent is never an icon colour)",
+      "base_source_url": "foundry://kit/astroquanta-icon-walk-forward",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "grid_px": 24,
+            "stroke_px": 1.5,
+            "stroke": "#D8DBD8",
+            "corners": "square"
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:fdc1872701abee1d5924b84b8abf7e59ea7c057e5db51bb168e1982c2a307c30",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/icons/costs.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "icon: costs and slippage gate",
+      "usage_location": "spec table on Home, plan card inclusion rows, blog post headers, About process section; never decorative on its own",
+      "animates": "icons appear Stepped with their row; no draw on, no hover colour (the accent is never an icon colour)",
+      "base_source_url": "foundry://kit/astroquanta-icon-costs",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "grid_px": 24,
+            "stroke_px": 1.5,
+            "stroke": "#D8DBD8",
+            "corners": "square"
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:480a434d9b1352ae0fea6b8adfb08eca8d3c18a0b8360c12273a3d7edbb118e8",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/icons/capacity.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "icon: capacity gate",
+      "usage_location": "spec table on Home, plan card inclusion rows, blog post headers, About process section; never decorative on its own",
+      "animates": "icons appear Stepped with their row; no draw on, no hover colour (the accent is never an icon colour)",
+      "base_source_url": "foundry://kit/astroquanta-icon-capacity",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "grid_px": 24,
+            "stroke_px": 1.5,
+            "stroke": "#D8DBD8",
+            "corners": "square"
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:d6eddf3227489e479d127f792fe71844e4cd89e2dcd7b9167c08872009897b54",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/icons/log.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "icon: trial log",
+      "usage_location": "spec table on Home, plan card inclusion rows, blog post headers, About process section; never decorative on its own",
+      "animates": "icons appear Stepped with their row; no draw on, no hover colour (the accent is never an icon colour)",
+      "base_source_url": "foundry://kit/astroquanta-icon-log",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "grid_px": 24,
+            "stroke_px": 1.5,
+            "stroke": "#D8DBD8",
+            "corners": "square"
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:b1d5075df85138adfb95071f8628b0f94225afb2d633f281da91c52ed7d6641c",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/icons/candidate.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "icon: the candidate, the survivor (the one icon with a fill)",
+      "usage_location": "spec table on Home, plan card inclusion rows, blog post headers, About process section; never decorative on its own",
+      "animates": "icons appear Stepped with their row; no draw on, no hover colour (the accent is never an icon colour)",
+      "base_source_url": "foundry://kit/astroquanta-icon-candidate",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "grid_px": 24,
+            "stroke_px": 1.5,
+            "stroke": "#D8DBD8",
+            "corners": "square"
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:1cd032132b0afbc6784cb0335f1f4d454ea308be14d7cff309fddae6e432e1ae",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/icons/decay-watch.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "icon: decay watch",
+      "usage_location": "spec table on Home, plan card inclusion rows, blog post headers, About process section; never decorative on its own",
+      "animates": "icons appear Stepped with their row; no draw on, no hover colour (the accent is never an icon colour)",
+      "base_source_url": "foundry://kit/astroquanta-icon-decay-watch",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "grid_px": 24,
+            "stroke_px": 1.5,
+            "stroke": "#D8DBD8",
+            "corners": "square"
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:49998bbeb602d2d7b0143a62382d82912120d9fb04f704eb13db0238f6643d31",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/icons/run.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "icon: a run, a log line arriving (orchestrator addition)",
+      "usage_location": "spec table on Home, plan card inclusion rows, blog post headers, About process section; never decorative on its own",
+      "animates": "icons appear Stepped with their row; no draw on, no hover colour (the accent is never an icon colour)",
+      "base_source_url": "foundry://kit/astroquanta-icon-run",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "grid_px": 24,
+            "stroke_px": 1.5,
+            "stroke": "#D8DBD8",
+            "corners": "square"
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:4506086670ae46165ab5ece62f87c5fb405921781751d98e7abb54d7c1c6758e",
+      "verified_by": null
+    },
+    {
+      "filename": "/public/assets/kit/icons/seat.svg",
+      "shot_type": "brand_graphic",
+      "kit_role": "icon: a seat on a plan (orchestrator addition)",
+      "usage_location": "spec table on Home, plan card inclusion rows, blog post headers, About process section; never decorative on its own",
+      "animates": "icons appear Stepped with their row; no draw on, no hover colour (the accent is never an icon colour)",
+      "base_source_url": "foundry://kit/astroquanta-icon-seat",
+      "base_license": "Brand-owned generated master",
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "master_generation",
+          "tool": "foundry/build_kit.py (hand written SVG)",
+          "prompt_or_params": {
+            "grid_px": 24,
+            "stroke_px": 1.5,
+            "stroke": "#D8DBD8",
+            "corners": "square"
+          }
+        }
+      ],
+      "grade_recipe_id": "none, native palette",
+      "final_hash": "sha256:7a5767faa72d1b2a5a0523ec330924942d18e2c983440038b39c8fcc87948947",
+      "verified_by": null
+    }
+  ],
+  "fonts": [
+    {
+      "filename": "/public/assets/fonts/IBMPlexMono-Medium.woff2",
+      "license": "SIL Open Font License 1.1",
+      "source": "npm @ibm/plex-mono 2.5.0",
+      "final_hash": "sha256:33faf307fa6031fb4062276d7320a6d632de890cbb347576fd80cfa01077bc25"
+    },
+    {
+      "filename": "/public/assets/fonts/IBMPlexMono-Regular.woff2",
+      "license": "SIL Open Font License 1.1",
+      "source": "npm @ibm/plex-mono 2.5.0",
+      "final_hash": "sha256:ba204497f16b6d334cee9d1e963a831b73e3a56e1d6300a8489d18df7214b350"
+    },
+    {
+      "filename": "/public/assets/fonts/LICENSE-IBM-Plex-OFL.txt",
+      "license": "SIL Open Font License 1.1",
+      "source": "npm @ibm/plex-mono 2.5.0",
+      "final_hash": "sha256:7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    }
+  ],
+  "kit_index": "/public/assets/kit/kit.json",
+  "assets_index": "/public/assets/frames/assets_index.json"
+}

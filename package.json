@@ -1,0 +1,19 @@
+{
+  "name": "astroquanta-site",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1 --port 4321",
+    "build": "astro build",
+    "preview": "astro preview --host 127.0.0.1 --port 4321"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^14.3.2",
+    "astro": "^7.3.3"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "esbuild": "^0.28.2"
+  }
+}
