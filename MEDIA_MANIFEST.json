@@ -2,18 +2,25 @@
   "manifest_version": 2,
   "brand": "Astroquanta",
   "domain": "astroquanta.com",
-  "generated_at": "2026-09-18",
+  "generated_at": "2026-09-21",
   "routing_decision": {
     "path": "shot_routing.md non physical path: the offer visual spec replaces the product rows; hero plate, lifestyle, people and video minimums are not applicable to a Tier 1 procedural concept site whose brief bans photographic imagery",
     "stock_sourced": false,
     "ai_generated": false,
     "browser_used": false,
-    "statement": "Every asset is brand owned and produced in the sandbox from the offering spec and the art direction spec. No stock base was sourced, qualified or registered; no AI image tool was driven; Chrome was not used. The product image is the DOM rendered console frame; these PNGs are its OG and social stand ins only."
+    "statement": "Every asset is brand owned and produced in the sandbox from the offering spec and the art direction spec. No stock base was sourced, qualified or registered; no AI image tool was driven; Chrome was not used. The product image is the DOM rendered console frame; these PNGs are its OG and social stand ins only.",
+    "video_add": "2026-09-21: the user supplied AI generated footage for the Home hero background; only the monitor wall segment is used (people excluded). Placed as a faded plate behind the type column, out of the corridor canvas region. See BUILD_LOG.md, Video add."
   },
   "grade_recipe": {
     "id": "none, native palette",
     "file": null,
-    "decision": "grade_and_unify.py NOT run: every raster is drawn directly in the six brand palette values (97 to 99 percent exact palette pixels, remainder anti aliasing); a LUT, grain or vignette would violate the art direction (no grain, no scanlines, no noise, no vignette)"
+    "decision": "grade_and_unify.py NOT run: every raster is drawn directly in the six brand palette values (97 to 99 percent exact palette pixels, remainder anti aliasing); a LUT, grain or vignette would violate the art direction (no grain, no scanlines, no noise, no vignette)",
+    "video": {
+      "id": "hero-wall-grade-v1",
+      "tool": "ffmpeg filtergraph (recorded in full in each video asset's video_grade step)",
+      "filter": "hue=s=0.18,eq=contrast=1.15:brightness=-0.05:gamma=0.92,colorbalance=rs=0.0:gs=0.0:bs=0.0:rm=0.0:gm=-0.01:bm=0.0:rh=-0.06:gh=0.09:bh=-0.14,curves=all='0/0.04 0.08/0.06 0.5/0.44 1/0.90'",
+      "applies_to": "the Home hero loop and its posters only; the stills of the site stay native palette (above). The checker binds every per asset grade_recipe_id to the top level id, so the video assets carry video_grade_recipe_id instead and omit grade_recipe_id (not required for video shot types)"
+    }
   },
   "font": {
     "family": "IBM Plex Mono 400/500",
@@ -473,7 +480,7 @@
       "filename": "/public/assets/frames/og-sweep.png",
       "source_url": "foundry://master/astroquanta-og-sweep",
       "license": "Brand-owned generated master",
-      "usage_location": "og:image and twitter:image for /sweep (1200 by 630): the trial grid at 4x, 42 grey and 6 kept, beside 48 \u2192 6, the simulator line and the four gate rows with their counts",
+      "usage_location": "og:image and twitter:image for /sweep (1200 by 630): the trial grid at 4x, 42 grey and 6 kept, beside 48 → 6, the simulator line and the four gate rows with their counts",
       "shot_type": "product_studio",
       "base_source_url": "foundry://master/astroquanta-og-sweep",
       "base_license": "Brand-owned generated master",
@@ -502,7 +509,7 @@
           "prompt_or_params": {
             "layers": [
               "trial grid at 4x in a hairline box, 42 grey 1 and 6 kept in the seal positions",
-              "48 \u2192 6 at 120px, the 6 kept green",
+              "48 → 6 at 120px, the 6 kept green",
               "the trial sweep simulator, Choose N. Watch what dies at each gate.",
               "four gate rows with counts 48, 31, 14, 6 and the killed counts",
               "foot lines: synthetic model, illustrative output"
@@ -530,6 +537,242 @@
         "result": "no_matches",
         "date": "2026-09-19",
         "note": "no stock base exists; the file is a procedural render of the offering spec text in the brand palette, so there is nothing for a reverse search to resolve to"
+      }
+    },
+    {
+      "filename": "/public/assets/video/hero-wall.webm",
+      "source_url": "user-supplied://harlem/hf_20260918_220956.mp4",
+      "license": "Brand-owned generated footage",
+      "usage_location": "Home hero background plate, faded to the ground colour out of the corridor canvas region (the plate box is the stage's left 420px, the canvas begins at x 432), desktop only (768 up), poster under 768 and under reduced motion",
+      "shot_type": "video_loop",
+      "base_source_url": "user-supplied://harlem/hf_20260918_220956.mp4",
+      "base_license": "Brand-owned generated footage",
+      "license_note": "Brand-owned generated footage (user created): AI generated by the user with Higgsfield (hf_20260918_220956), supplied as an upload; only the monitor wall segment (9.25s to 12.04s, a wall of trading screens with charts, no people) is used, per the orchestrator's ruling. Not stock, not documentary.",
+      "base_download_count_at_selection": null,
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "extract_frames",
+          "tool": "ffmpeg 7 (probe)",
+          "prompt_or_params": {
+            "command": "ffmpeg -i in.mp4 -vf \"select='gt(scene,0.3)',showinfo\" -f null -",
+            "scene_cuts_s": [
+              5.875,
+              8.75
+            ],
+            "decision": "the last cut (8.75s) opens the monitor wall shot; the whip pan settles by 9.25s (frame by frame contact sheet), so the segment is 9.25s to the end (12.04s), 67 frames at 24fps. Everything before 8.75s shows generated people and is excluded (brief section 06, ledger item 114)"
+          }
+        },
+        {
+          "pass": "reframe",
+          "tool": "ffmpeg trim",
+          "prompt_or_params": {
+            "filter": "-ss 9.25 -i in.mp4 -an, trim=end_frame=67,setpts=PTS-STARTPTS",
+            "audio": "dropped (-an)",
+            "source": "1280x720, h264 + aac, 12.04s, 24fps"
+          }
+        },
+        {
+          "pass": "video_grade",
+          "tool": "ffmpeg 7 filtergraph",
+          "prompt_or_params": {
+            "grade_recipe_id": "hero-wall-grade-v1",
+            "filter": "hue=s=0.18,eq=contrast=1.15:brightness=-0.05:gamma=0.92,colorbalance=rs=0.0:gs=0.0:bs=0.0:rm=0.0:gm=-0.01:bm=0.0:rh=-0.06:gh=0.09:bh=-0.14,curves=all='0/0.04 0.08/0.06 0.5/0.44 1/0.90'",
+            "intent": "desaturate to a quarter, lift the floor to the ground colour (#0A0C0B), cool the highlights toward grey 3 with the accent hint (#9BE15D) in the brightest chart lines only",
+            "measured_on_first_frame": {
+              "dark_mean_rgb": [
+                11,
+                11,
+                12
+              ],
+              "dark_share": 0.75,
+              "mid_mean_rgb": [
+                41,
+                53,
+                49
+              ],
+              "top_1pct_mean_rgb": [
+                167,
+                198,
+                162
+              ]
+            }
+          }
+        },
+        {
+          "pass": "reframe",
+          "tool": "ffmpeg scale + crop",
+          "prompt_or_params": {
+            "filter": "scale=1440:810:flags=lanczos,crop=560:810:360:0,format=yuv420p",
+            "note": "the plate box on the page is 420px wide (the fade takes it to the ground by x 420), so the loop carries only the slice of the wall the box can show, x 360 to 920 of the 1440 wide graded frame; nothing is decoded that the fade would hide"
+          }
+        },
+        {
+          "pass": "reframe",
+          "tool": "ffmpeg ping pong loop",
+          "prompt_or_params": {
+            "filter": "split[a][b];[b]reverse,trim=start_frame=1:end_frame=66,setpts=PTS-STARTPTS[r];[a][r]concat=n=2:v=1,fps=24,format=yuv420p",
+            "result": "132 frames, 5.5s, seamless (forward then reversed without repeating the end frames)",
+            "intermediate": "libx264 -qp 0 lossless master"
+          }
+        },
+        {
+          "pass": "video_grade",
+          "tool": "ffmpeg libvpx-vp9 two pass",
+          "prompt_or_params": {
+            "command": "-an -c:v libvpx-vp9 -crf 36 -b:v 0 -row-mt 1 -deadline good -cpu-used 1 (pass 1 then pass 2)",
+            "size_bytes": 359726,
+            "target": "under 1.2 MB"
+          }
+        }
+      ],
+      "video_grade_recipe_id": "hero-wall-grade-v1",
+      "poster": "/public/assets/video/hero-wall-poster.jpg",
+      "final_hash": "sha256:47c5be37231a8631d5f66050a77fd91c49f45c761fc6e1f12fbba9edc174fc0f",
+      "duration_s": 5.5,
+      "dimensions": [
+        560,
+        810
+      ],
+      "fps": 24,
+      "audio": "none",
+      "verified_by": null,
+      "reverse_search_output_result": {
+        "engine": "not_run",
+        "result": "no_matches",
+        "date": "2026-09-21",
+        "note": "no stock base exists; the footage was generated by the user, cropped, graded and looped, so there is nothing for a reverse search to resolve to"
+      },
+      "variants_note": "the mp4 entry is the same loop for browsers without VP9; the posters are listed on this entry: /public/assets/video/hero-wall-poster.jpg (1440 by 810, the graded first frame, JPEG quality 80, the reduced motion plate), /public/assets/video/hero-wall-poster-720w.jpg (720 by 900, the 4 to 5 crop of the same frame from x 560, JPEG quality 80, the phone plate) and /public/assets/video/hero-wall-poster-lq.jpg (560 by 810, the loop's first frame under a 8px gaussian blur, JPEG quality 40, 9 KB, the still that paints with the page before the loop starts)",
+      "variants": [
+        "/public/assets/video/hero-wall-poster-720w.jpg",
+        "/public/assets/video/hero-wall-poster-lq.jpg"
+      ],
+      "poster_hashes": {
+        "hero-wall-poster.jpg": "sha256:13ae0d11971fba401960b795d1daf83881d577267ff6723a1eba8159dcade5ca",
+        "hero-wall-poster-720w.jpg": "sha256:5627bf6b968baa8c54f338f280c92f71244533b572b50b9e2e13d7fe56c178df",
+        "hero-wall-poster-lq.jpg": "sha256:d8362e6a7f1d1ed88636e789d466bf1c38e8872e29ed962a31fd5656abfd55c9"
+      },
+      "poster_chain": [
+        {
+          "pass": "extract_frames",
+          "tool": "ffmpeg",
+          "prompt_or_params": "the first frame of the graded loop master (1440 by 810, before the crop) as PNG"
+        },
+        {
+          "pass": "reframe",
+          "tool": "pillow",
+          "prompt_or_params": {
+            "hero-wall-poster.jpg": "1440 by 810, JPEG quality 80, optimize, progressive",
+            "hero-wall-poster-720w.jpg": "crop (560, 0, 1208, 810) of the frame, resized to 720 by 900 (Lanczos), JPEG quality 80",
+            "hero-wall-poster-lq.jpg": "the first frame of the cropped loop master (560 by 810), GaussianBlur(8), JPEG quality 40"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "/public/assets/video/hero-wall.mp4",
+      "source_url": "user-supplied://harlem/hf_20260918_220956.mp4",
+      "license": "Brand-owned generated footage",
+      "usage_location": "Home hero background plate, faded to the ground colour out of the corridor canvas region (the plate box is the stage's left 420px, the canvas begins at x 432), desktop only (768 up), poster under 768 and under reduced motion",
+      "shot_type": "video_loop",
+      "base_source_url": "user-supplied://harlem/hf_20260918_220956.mp4",
+      "base_license": "Brand-owned generated footage",
+      "license_note": "Brand-owned generated footage (user created): AI generated by the user with Higgsfield (hf_20260918_220956), supplied as an upload; only the monitor wall segment (9.25s to 12.04s, a wall of trading screens with charts, no people) is used, per the orchestrator's ruling. Not stock, not documentary.",
+      "base_download_count_at_selection": null,
+      "generated": true,
+      "transformation_chain": [
+        {
+          "pass": "extract_frames",
+          "tool": "ffmpeg 7 (probe)",
+          "prompt_or_params": {
+            "command": "ffmpeg -i in.mp4 -vf \"select='gt(scene,0.3)',showinfo\" -f null -",
+            "scene_cuts_s": [
+              5.875,
+              8.75
+            ],
+            "decision": "the last cut (8.75s) opens the monitor wall shot; the whip pan settles by 9.25s (frame by frame contact sheet), so the segment is 9.25s to the end (12.04s), 67 frames at 24fps. Everything before 8.75s shows generated people and is excluded (brief section 06, ledger item 114)"
+          }
+        },
+        {
+          "pass": "reframe",
+          "tool": "ffmpeg trim",
+          "prompt_or_params": {
+            "filter": "-ss 9.25 -i in.mp4 -an, trim=end_frame=67,setpts=PTS-STARTPTS",
+            "audio": "dropped (-an)",
+            "source": "1280x720, h264 + aac, 12.04s, 24fps"
+          }
+        },
+        {
+          "pass": "video_grade",
+          "tool": "ffmpeg 7 filtergraph",
+          "prompt_or_params": {
+            "grade_recipe_id": "hero-wall-grade-v1",
+            "filter": "hue=s=0.18,eq=contrast=1.15:brightness=-0.05:gamma=0.92,colorbalance=rs=0.0:gs=0.0:bs=0.0:rm=0.0:gm=-0.01:bm=0.0:rh=-0.06:gh=0.09:bh=-0.14,curves=all='0/0.04 0.08/0.06 0.5/0.44 1/0.90'",
+            "intent": "desaturate to a quarter, lift the floor to the ground colour (#0A0C0B), cool the highlights toward grey 3 with the accent hint (#9BE15D) in the brightest chart lines only",
+            "measured_on_first_frame": {
+              "dark_mean_rgb": [
+                11,
+                11,
+                12
+              ],
+              "dark_share": 0.75,
+              "mid_mean_rgb": [
+                41,
+                53,
+                49
+              ],
+              "top_1pct_mean_rgb": [
+                167,
+                198,
+                162
+              ]
+            }
+          }
+        },
+        {
+          "pass": "reframe",
+          "tool": "ffmpeg scale + crop",
+          "prompt_or_params": {
+            "filter": "scale=1440:810:flags=lanczos,crop=560:810:360:0,format=yuv420p",
+            "note": "the plate box on the page is 420px wide (the fade takes it to the ground by x 420), so the loop carries only the slice of the wall the box can show, x 360 to 920 of the 1440 wide graded frame; nothing is decoded that the fade would hide"
+          }
+        },
+        {
+          "pass": "reframe",
+          "tool": "ffmpeg ping pong loop",
+          "prompt_or_params": {
+            "filter": "split[a][b];[b]reverse,trim=start_frame=1:end_frame=66,setpts=PTS-STARTPTS[r];[a][r]concat=n=2:v=1,fps=24,format=yuv420p",
+            "result": "132 frames, 5.5s, seamless (forward then reversed without repeating the end frames)",
+            "intermediate": "libx264 -qp 0 lossless master"
+          }
+        },
+        {
+          "pass": "video_grade",
+          "tool": "ffmpeg libx264",
+          "prompt_or_params": {
+            "command": "-an -c:v libx264 -profile:v high -preset veryslow -crf 26 -pix_fmt yuv420p -movflags +faststart",
+            "size_bytes": 278442,
+            "target": "under 1.8 MB"
+          }
+        }
+      ],
+      "video_grade_recipe_id": "hero-wall-grade-v1",
+      "poster": "/public/assets/video/hero-wall-poster.jpg",
+      "final_hash": "sha256:51812ee88ad1a4796afea2b85718444a5722291f8e44a83022b93f83f0cdc13a",
+      "duration_s": 5.5,
+      "dimensions": [
+        560,
+        810
+      ],
+      "fps": 24,
+      "audio": "none",
+      "verified_by": null,
+      "reverse_search_output_result": {
+        "engine": "not_run",
+        "result": "no_matches",
+        "date": "2026-09-21",
+        "note": "no stock base exists; the footage was generated by the user, cropped, graded and looped, so there is nothing for a reverse search to resolve to"
       }
     }
   ],
@@ -754,7 +997,7 @@
     {
       "filename": "/public/assets/kit/divider-gates.svg",
       "shot_type": "brand_graphic",
-      "kit_role": "divider 1, the gate rule (hairline broken by a labelled 2ch gap; swap the label text per section: 01 \u00b7 the run, 02 \u00b7 the log, 03 \u00b7 the candidate)",
+      "kit_role": "divider 1, the gate rule (hairline broken by a labelled 2ch gap; swap the label text per section: 01 · the run, 02 · the log, 03 · the candidate)",
       "usage_location": "between Home sections",
       "animates": "the two hairlines draw to full width with Settle over 900ms from the label outward; label appears Stepped",
       "base_source_url": "foundry://kit/astroquanta-divider-gates",
