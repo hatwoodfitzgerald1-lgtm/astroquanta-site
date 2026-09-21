@@ -397,6 +397,10 @@ html.rm .loader .loader__grid li { border-color: var(--g3); }
 html.rm *, html.rm *::before, html.rm *::after { animation: none !important; transition: none !important; }
 html.rm .hero-arc { min-height: 100vh; }
 html.rm .hero-stage { position: relative; }
+/* video add: under reduced motion the plate is the full graded poster alone; the loop never plays */
+html.rm .hero__plate video { display: none; }
+html.rm .hero__plate video, html.rm .hero__plate.is-playing video { opacity: 0; transition: none; }
+html.rm .hero__plate .hero__plate-poster { transition: none; }
 html.rm .hero__gate-log { display: none; }
 html.rm .btn:hover, html.rm .btn:focus-visible, html.rm main h2:hover, html.rm main h1:hover, html.rm .link-tertiary:hover, html.rm .field:hover label, html.rm .chips button:hover, html.rm .gates-index .gate:hover, html.rm .caption:hover, html.rm .process-row:hover, html.rm .plan-rows li:hover { transform: none; text-indent: 0; }
 html.rm .btn:hover::before, html.rm .btn:focus-visible::before { transform: none; }

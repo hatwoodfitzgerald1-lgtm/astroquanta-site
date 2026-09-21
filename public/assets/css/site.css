@@ -325,6 +325,44 @@ main > section, main > article, main > .legal-layout, main > .post, main > .abou
 .hero-stage > .scene-slot::after { content: none; }
 .hero-stage > .scene-slot .scene-slot__label { position: absolute; top: var(--s-7); right: var(--gutter); left: auto; bottom: auto; color: var(--g2); font-size: var(--fs-label); line-height: 1.6; }
 .hero-stage > * { position: relative; z-index: 1; }
+/* Video add: the monitor wall footage as the stage's background plate, the lowest layer (behind the corridor canvas,
+   which is the stage's right 64 percent from x 432 at the 1200 stage, behind the DOM type, above the ground). The
+   plate is faded with gradients painted in the ground colour over it (.hero__plate::after) rather than CSS masks: on
+   the ground they compose to exactly the same picture, and a masked layer holding a playing video cost 17fps on the
+   signature scroll in the pass 6 harness (42 against 59 with the video removed), while plain gradient layers cost
+   nothing measurable. The horizontal fade holds the plate whole across the type column and runs it out to the ground
+   by x 420, 12px before the canvas begins, so the corridor keeps its own ground; the vertical fade holds the top 240px
+   at ground and lets the plate rise to full by 380px (the Fraction's top), so the band above the Fraction stays the
+   calm ground field it was (whitespace_density.py: the largest empty field stays at the pass 6 value), and covers the
+   bottom 128px ground band so the dock keeps its field. Each layer carries its own opacity (0.374, the 0.44 by 0.85
+   of the earlier mask) so no group opacity surface is needed. The slice shown is the chart screens (not the table
+   screen at the frame's left edge), behind the Fraction and the headline. The
+   blurred still paints first and the loop fades in over it once it is playing; the still alone shows under 768 and
+   under reduced motion (motion.css). */
+.hero-stage > .hero__plate { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.hero__plate img, .hero__plate video { position: absolute; inset: 0; display: block; width: 420px; height: 100%; object-fit: cover; object-position: 0 50%; margin: 0; border: 0; background: transparent; }
+/* the still is shown only once it is complete (its onload adds is-in), so it enters the largest paint record whole,
+   with all of its bytes; a partly decoded first paint can leave it out as low entropy and hand the largest paint to
+   the loop or the poster seconds later */
+.hero__plate .hero__plate-still { opacity: 0; }
+.hero__plate .hero__plate-still.is-in { opacity: 0.374; }
+/* the still, the loop and the poster are laid out in a 420px wide box (the fade takes the plate to the ground at x 420,
+   so nothing wider would ever be seen, and the loop is cropped to that slice: 560 by 810 from x 360 of the graded 1440
+   frame, so nothing is decoded that the fade would hide). The loop and the poster sit 1px down inside the still's box,
+   which keeps them a smaller paint candidate than the still already on screen, so neither the loop's first frame nor
+   the poster moves the page's largest paint. The full frame poster (reduced motion) is positioned so the same slice
+   of the wall (the chart screens) is in view as the still and the loop show */
+.hero__plate video, .hero__plate .hero__plate-poster { top: 1px; height: calc(100% - 1px); opacity: 0; transition: opacity var(--d-slow) var(--ease-settle); }
+.hero__plate .hero__plate-poster { object-position: 33.9% 50%; }
+.hero__plate.is-playing video, .hero__plate.is-poster .hero__plate-poster { opacity: 0.374; }
+/* the fades, painted in the ground colour over the plate: right of the type column, the band above the Fraction, the dock band */
+.hero__plate::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background:
+    linear-gradient(to right, rgba(10, 12, 11, 0) 288px, var(--ground) 420px),
+    linear-gradient(to bottom, var(--ground) 240px, rgba(10, 12, 11, 0) 380px),
+    linear-gradient(to top, var(--ground) 0, rgba(10, 12, 11, 0) 128px);
+}
 .hero__eyebrow { grid-area: eyebrow; align-self: start; margin: 0; }
 .hero__field { grid-area: field; min-height: 0; }
 .hero__field .lattice { display: none; }
@@ -353,6 +391,9 @@ main > section, main > article, main > .legal-layout, main > .post, main > .abou
 .lattice:not(.is-at-rest) li.is-killed { background: var(--g1); border-color: var(--g1); }
 .lattice:not(.is-at-rest) li.is-kept { background: var(--kept); border-color: var(--kept); }
 
+/* the phone shows the 720 by 900 graded poster crop alone (video add): no autoplay video under 768, the plate quieter
+   under the grey 2 subhead (0.272, the 0.32 by 0.85 of the earlier mask), the crop centred */
+@media (max-width: 767.98px) { .hero__plate video { display: none; } .hero__plate .hero__plate-still.is-in, .hero__plate.is-poster .hero__plate-poster { opacity: 0.272; } .hero__plate img { width: 100%; object-position: 50% 50%; } }
 @media (max-width: 1023.98px) {
   .hero-arc { min-height: 0; border-bottom: 0; }
   .hero-stage {
@@ -364,6 +405,8 @@ main > section, main > article, main > .legal-layout, main > .post, main > .abou
     padding: var(--s-6) var(--gutter) var(--s-7);
   }
   .hero-stage > .scene-slot { display: none; }
+  /* the plate needs the in flow stage as its containing block (video add); the mask runs out by x 420 as on desktop */
+  .hero-stage { position: relative; }
   .hero__field .lattice { display: grid; grid-template-columns: repeat(8, var(--cell-m)); }
   .hero__field .lattice li { width: var(--cell-m); height: var(--cell-m); }
   .hero__fraction { margin: var(--s-8) 0 var(--s-6); align-self: start; }
