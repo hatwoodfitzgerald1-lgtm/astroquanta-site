@@ -1,0 +1,260 @@
+{
+  "quality": 82,
+  "widths": [
+    480,
+    960,
+    1440
+  ],
+  "avif": true,
+  "assets": {
+    "frame-candidate": {
+      "source": "frame-candidate.png",
+      "kind": "image",
+      "width": 1600,
+      "height": 1000,
+      "variants": [
+        "/public/assets/frames/frame-candidate-480w.webp",
+        "/public/assets/frames/frame-candidate-480w.avif",
+        "/public/assets/frames/frame-candidate-960w.webp",
+        "/public/assets/frames/frame-candidate-960w.avif",
+        "/public/assets/frames/frame-candidate-1440w.webp",
+        "/public/assets/frames/frame-candidate-1440w.avif",
+        "/public/assets/frames/frame-candidate-1600w.webp",
+        "/public/assets/frames/frame-candidate-1600w.avif"
+      ],
+      "renditions": [
+        {
+          "path": "/public/assets/frames/frame-candidate-480w.webp",
+          "width": 480,
+          "height": 300,
+          "format": "webp",
+          "bytes": 13730,
+          "hash": "sha256:be1cb812792b8952ebcd39c02d048016cc9d51c25de14d3d91a474db065c62c8"
+        },
+        {
+          "path": "/public/assets/frames/frame-candidate-480w.avif",
+          "width": 480,
+          "height": 300,
+          "format": "avif",
+          "bytes": 11661,
+          "hash": "sha256:081f3477a2424f16e4579b7068d766c4b1e27f15a3af16f9b9638a0049d34746"
+        },
+        {
+          "path": "/public/assets/frames/frame-candidate-960w.webp",
+          "width": 960,
+          "height": 600,
+          "format": "webp",
+          "bytes": 36294,
+          "hash": "sha256:fcc94f17af9b1cc060bd2e8c14057bd447e69d48388dbceee700ffe9700c34eb"
+        },
+        {
+          "path": "/public/assets/frames/frame-candidate-960w.avif",
+          "width": 960,
+          "height": 600,
+          "format": "avif",
+          "bytes": 28738,
+          "hash": "sha256:32540c16892f46776803107d3bbb677b1a21eeb6757c030b4339e376380ae29a"
+        },
+        {
+          "path": "/public/assets/frames/frame-candidate-1440w.webp",
+          "width": 1440,
+          "height": 900,
+          "format": "webp",
+          "bytes": 56844,
+          "hash": "sha256:d9d2a1ef1bcc4170362ebc5c0c898665615944a5ea602b14b3a8fbb3643482a4"
+        },
+        {
+          "path": "/public/assets/frames/frame-candidate-1440w.avif",
+          "width": 1440,
+          "height": 900,
+          "format": "avif",
+          "bytes": 45591,
+          "hash": "sha256:5385cd0dc5b2f8d43638179f85d48963d87ecce4e849f501874483afad67e34b"
+        },
+        {
+          "path": "/public/assets/frames/frame-candidate-1600w.webp",
+          "width": 1600,
+          "height": 1000,
+          "format": "webp",
+          "bytes": 61658,
+          "hash": "sha256:b80b1613615dd916803107a3f6d426e22343131adbd9abbf3b327c02a43c0862"
+        },
+        {
+          "path": "/public/assets/frames/frame-candidate-1600w.avif",
+          "width": 1600,
+          "height": 1000,
+          "format": "avif",
+          "bytes": 29770,
+          "hash": "sha256:b034f5a8c578cbb41664b1af993861c235b13f6dbde98b7da3af0a1272941edc"
+        }
+      ],
+      "srcset_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"/assets/frames/frame-candidate-480w.avif 480w, /assets/frames/frame-candidate-960w.avif 960w, /assets/frames/frame-candidate-1440w.avif 1440w, /assets/frames/frame-candidate-1600w.avif 1600w\" sizes=\"(max-width: 960px) 100vw, 60vw\">\n  <source type=\"image/webp\" srcset=\"/assets/frames/frame-candidate-480w.webp 480w, /assets/frames/frame-candidate-960w.webp 960w, /assets/frames/frame-candidate-1440w.webp 1440w, /assets/frames/frame-candidate-1600w.webp 1600w\" sizes=\"(max-width: 960px) 100vw, 60vw\">\n  <img src=\"/assets/frames/frame-candidate-1600w.webp\" width=\"1600\" height=\"1000\" alt=\"\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    "frame-run": {
+      "source": "frame-run.png",
+      "kind": "image",
+      "width": 1600,
+      "height": 1000,
+      "variants": [
+        "/public/assets/frames/frame-run-480w.webp",
+        "/public/assets/frames/frame-run-480w.avif",
+        "/public/assets/frames/frame-run-960w.webp",
+        "/public/assets/frames/frame-run-960w.avif",
+        "/public/assets/frames/frame-run-1440w.webp",
+        "/public/assets/frames/frame-run-1440w.avif",
+        "/public/assets/frames/frame-run-1600w.webp",
+        "/public/assets/frames/frame-run-1600w.avif"
+      ],
+      "renditions": [
+        {
+          "path": "/public/assets/frames/frame-run-480w.webp",
+          "width": 480,
+          "height": 300,
+          "format": "webp",
+          "bytes": 13992,
+          "hash": "sha256:1c8bfb0012f6f7cbd80ff245a11e08816fea6456d8a8d63ed156e5279ed3b71b"
+        },
+        {
+          "path": "/public/assets/frames/frame-run-480w.avif",
+          "width": 480,
+          "height": 300,
+          "format": "avif",
+          "bytes": 11430,
+          "hash": "sha256:9900d9e8ee1da0add6b9d5ac68e70df1a12db599ee095279ed6e08ab826f47ed"
+        },
+        {
+          "path": "/public/assets/frames/frame-run-960w.webp",
+          "width": 960,
+          "height": 600,
+          "format": "webp",
+          "bytes": 37720,
+          "hash": "sha256:c4bae45b2d2f88cf07f97a7d37629669b1b31e260e74036f9243340ba9cd912b"
+        },
+        {
+          "path": "/public/assets/frames/frame-run-960w.avif",
+          "width": 960,
+          "height": 600,
+          "format": "avif",
+          "bytes": 26775,
+          "hash": "sha256:0989aad2dc019f7871033f0b6486d246f0d2ff17fef64b68d8c1fd9658afa7ca"
+        },
+        {
+          "path": "/public/assets/frames/frame-run-1440w.webp",
+          "width": 1440,
+          "height": 900,
+          "format": "webp",
+          "bytes": 59454,
+          "hash": "sha256:13192ccdc369cd061198ae4084f05ba9c4c49c1a8772fab53c6d72f4bc449722"
+        },
+        {
+          "path": "/public/assets/frames/frame-run-1440w.avif",
+          "width": 1440,
+          "height": 900,
+          "format": "avif",
+          "bytes": 44047,
+          "hash": "sha256:488664d3656bbd51048d80f36492bb1ece58efa5244bda572b041007ab646932"
+        },
+        {
+          "path": "/public/assets/frames/frame-run-1600w.webp",
+          "width": 1600,
+          "height": 1000,
+          "format": "webp",
+          "bytes": 62626,
+          "hash": "sha256:bad1f54d5f91a73d8af72407e3e5c17ef675037a877977af4a8253a0e69eff21"
+        },
+        {
+          "path": "/public/assets/frames/frame-run-1600w.avif",
+          "width": 1600,
+          "height": 1000,
+          "format": "avif",
+          "bytes": 28618,
+          "hash": "sha256:f18d094f93e02eee7a205164181466e74754b870e6d90449fa2add2400ab80cb"
+        }
+      ],
+      "srcset_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"/assets/frames/frame-run-480w.avif 480w, /assets/frames/frame-run-960w.avif 960w, /assets/frames/frame-run-1440w.avif 1440w, /assets/frames/frame-run-1600w.avif 1600w\" sizes=\"(max-width: 960px) 100vw, 60vw\">\n  <source type=\"image/webp\" srcset=\"/assets/frames/frame-run-480w.webp 480w, /assets/frames/frame-run-960w.webp 960w, /assets/frames/frame-run-1440w.webp 1440w, /assets/frames/frame-run-1600w.webp 1600w\" sizes=\"(max-width: 960px) 100vw, 60vw\">\n  <img src=\"/assets/frames/frame-run-1600w.webp\" width=\"1600\" height=\"1000\" alt=\"\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    "frame-trial-log": {
+      "source": "frame-trial-log.png",
+      "kind": "image",
+      "width": 1600,
+      "height": 1000,
+      "variants": [
+        "/public/assets/frames/frame-trial-log-480w.webp",
+        "/public/assets/frames/frame-trial-log-480w.avif",
+        "/public/assets/frames/frame-trial-log-960w.webp",
+        "/public/assets/frames/frame-trial-log-960w.avif",
+        "/public/assets/frames/frame-trial-log-1440w.webp",
+        "/public/assets/frames/frame-trial-log-1440w.avif",
+        "/public/assets/frames/frame-trial-log-1600w.webp",
+        "/public/assets/frames/frame-trial-log-1600w.avif"
+      ],
+      "renditions": [
+        {
+          "path": "/public/assets/frames/frame-trial-log-480w.webp",
+          "width": 480,
+          "height": 300,
+          "format": "webp",
+          "bytes": 11404,
+          "hash": "sha256:b1a0a47a94c96471ca2dca1c3a3cb8b289326f06be47eff11773c85149675046"
+        },
+        {
+          "path": "/public/assets/frames/frame-trial-log-480w.avif",
+          "width": 480,
+          "height": 300,
+          "format": "avif",
+          "bytes": 9638,
+          "hash": "sha256:a8116f3829b7fb3380fccc669154ffdf2fb3af8bbae649e08ef21358418b4650"
+        },
+        {
+          "path": "/public/assets/frames/frame-trial-log-960w.webp",
+          "width": 960,
+          "height": 600,
+          "format": "webp",
+          "bytes": 28154,
+          "hash": "sha256:161913005a41665851698a56afd7e56223accffa04aaaa50f5dfd7de510f3a00"
+        },
+        {
+          "path": "/public/assets/frames/frame-trial-log-960w.avif",
+          "width": 960,
+          "height": 600,
+          "format": "avif",
+          "bytes": 20492,
+          "hash": "sha256:b829cae0b0ed34449261a2473f40b64bb03f48a9e744650ec93530e160ba5d23"
+        },
+        {
+          "path": "/public/assets/frames/frame-trial-log-1440w.webp",
+          "width": 1440,
+          "height": 900,
+          "format": "webp",
+          "bytes": 42122,
+          "hash": "sha256:fdaffd00d75a55a3d0ff884a8a035f33516e74789bf73ea77d9bc58673aa7b15"
+        },
+        {
+          "path": "/public/assets/frames/frame-trial-log-1440w.avif",
+          "width": 1440,
+          "height": 900,
+          "format": "avif",
+          "bytes": 33513,
+          "hash": "sha256:f21e9197f13ce0c197b4e379b2ec813c546adda14564cc07e311aab47a4b46bf"
+        },
+        {
+          "path": "/public/assets/frames/frame-trial-log-1600w.webp",
+          "width": 1600,
+          "height": 1000,
+          "format": "webp",
+          "bytes": 44466,
+          "hash": "sha256:3cd26db70e9c823e41d556bbac8a07996efd114c906f9250fa422172a8b16aa8"
+        },
+        {
+          "path": "/public/assets/frames/frame-trial-log-1600w.avif",
+          "width": 1600,
+          "height": 1000,
+          "format": "avif",
+          "bytes": 19603,
+          "hash": "sha256:94cc1673950f97fcb2aeb2a708340c13f9ab5c9b5c252db0eef05b52a7dd4281"
+        }
+      ],
+      "srcset_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"/assets/frames/frame-trial-log-480w.avif 480w, /assets/frames/frame-trial-log-960w.avif 960w, /assets/frames/frame-trial-log-1440w.avif 1440w, /assets/frames/frame-trial-log-1600w.avif 1600w\" sizes=\"(max-width: 960px) 100vw, 60vw\">\n  <source type=\"image/webp\" srcset=\"/assets/frames/frame-trial-log-480w.webp 480w, /assets/frames/frame-trial-log-960w.webp 960w, /assets/frames/frame-trial-log-1440w.webp 1440w, /assets/frames/frame-trial-log-1600w.webp 1600w\" sizes=\"(max-width: 960px) 100vw, 60vw\">\n  <img src=\"/assets/frames/frame-trial-log-1600w.webp\" width=\"1600\" height=\"1000\" alt=\"\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    }
+  }
+}
