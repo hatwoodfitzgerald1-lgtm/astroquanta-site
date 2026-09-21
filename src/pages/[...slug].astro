@@ -1,0 +1,24 @@
+---
+export const prerender = false;
+// Every built page is bundled as a raw string at build time; the catch all serves it server side so
+// subpages never hit the trailing slash redirect loop.
+const files = import.meta.glob('../site/**/index.html', { query: '?raw', import: 'default', eager: true });
+const map = {};
+for (const p in files) { let r = p.replace('../site', '').replace(/index\.html$/, ''); if (r === '') r = '/'; map[r] = files[p]; }
+const redirects = { '/terms/': '/terms-of-service/', '/privacy/': '/privacy-policy/', '/products/': '/plans/', '/confirmation/': '/checkout/confirmed/' };
+let path = new URL(Astro.request.url).pathname;
+if (!path.endsWith('/')) path += '/';
+if (redirects[path]) return Astro.redirect(redirects[path], 301);
+const found = map[path];
+let html = found || map['/404/'] || map['/'];
+// og:image and twitter:image are authored site relative; they are made absolute here with the origin that served the
+// page (https://astroquanta.com in production, the webflow.io host on a preview), so crawlers can always fetch them.
+const origin = new URL(Astro.request.url).origin;
+html = html.replace(/(<meta (?:property="og:image"|name="twitter:image") content=")(\/assets\/)/g, '$1' + origin + '$2');
+// noindex (pass 6): checkout, the confirmation and every 404 carry X-Robots-Tag rather than a meta tag, so the
+// crawl directive travels with the response and the pre deploy head scan (which fails on any meta noindex) stays green.
+const noindex = !found || path === '/checkout/' || path === '/checkout/confirmed/';
+const headers = { 'content-type': 'text/html; charset=utf-8', 'cache-control': found ? 'public, max-age=300' : 'no-store' };
+if (noindex) headers['x-robots-tag'] = 'noindex, nofollow';
+return new Response(html, { status: found ? 200 : 404, headers });
+---
