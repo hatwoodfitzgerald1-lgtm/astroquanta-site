@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="t" class="icon icon--decay-watch">
+  <title id="t">icon: decay watch (a half life curve inside the cell)</title>
+  <desc>A cell with a half life curve drawn from its top left to its bottom right.</desc>
+  <g fill="none" stroke="#D8DBD8" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter">
+    <rect x="6.75" y="6.75" width="10.5" height="10.5"/>
+    <path d="M7.5 7.5 C 7.5 13.5, 11 16.5, 16.5 16.5"/>
+  </g>
+</svg>

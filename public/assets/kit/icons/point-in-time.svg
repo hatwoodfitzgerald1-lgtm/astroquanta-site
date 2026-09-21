@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="t" class="icon icon--point-in-time">
+  <title id="t">icon: point in time (the hand, and where it would have been if restated)</title>
+  <desc>A cell with a clock hand from the centre to the ten o'clock corner and a dotted hand toward two o'clock.</desc>
+  <g fill="none" stroke="#D8DBD8" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter">
+    <rect x="6.75" y="6.75" width="10.5" height="10.5"/>
+    <line x1="12" y1="12" x2="7.5" y2="7.5"/>
+    <line x1="12" y1="12" x2="16.5" y2="7.5" stroke-dasharray="1.5 1.5"/>
+  </g>
+</svg>

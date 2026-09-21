@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="t" class="icon icon--run">
+  <title id="t">icon: run (a log line arriving)</title>
+  <desc>The prompt glyph as a chevron with a short row to its right: a log line arriving.</desc>
+  <g fill="none" stroke="#D8DBD8" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter">
+    <polyline points="6.5,7.5 11,12 6.5,16.5"/>
+    <line x1="13" y1="16.25" x2="19" y2="16.25"/>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="t" class="icon icon--costs">
+  <title id="t">icon: costs and slippage (the edge eaten)</title>
+  <desc>A cell with a 4px notch removed from its top right corner.</desc>
+  <g fill="none" stroke="#D8DBD8" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter">
+    <path d="M6.75 6.75 H13.25 V10.75 H17.25 V17.25 H6.75 Z"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="t" class="icon icon--dataset">
+  <title id="t">icon: dataset (a table being onboarded)</title>
+  <desc>Three stacked hairline rows with a 2px gap, the top row half length.</desc>
+  <g fill="none" stroke="#D8DBD8" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter">
+    <line x1="5" y1="8.5" x2="12" y2="8.5"/>
+    <line x1="5" y1="12" x2="19" y2="12"/>
+    <line x1="5" y1="15.5" x2="19" y2="15.5"/>
+  </g>
+</svg>

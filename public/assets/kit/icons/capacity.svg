@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="t" class="icon icon--capacity">
+  <title id="t">icon: capacity (a cap resting on the cell)</title>
+  <desc>A cell with a hairline cap resting on top, 2px wider than the cell.</desc>
+  <g fill="none" stroke="#D8DBD8" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter">
+    <rect x="6.75" y="8.75" width="10.5" height="10.5"/>
+    <line x1="5" y1="5.75" x2="19" y2="5.75"/>
+  </g>
+</svg>

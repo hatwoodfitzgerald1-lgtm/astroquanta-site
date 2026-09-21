@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="t" class="icon icon--candidate">
+  <title id="t">icon: candidate (the survivor)</title>
+  <desc>One kept green cell with a 1px grey 3 rim.</desc>
+  <g fill="none" stroke="#D8DBD8" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter">
+    <rect x="6.5" y="6.5" width="11" height="11" fill="#9BE15D" stroke="#D8DBD8" stroke-width="1" class="cell cell--kept"/>
+  </g>
+</svg>

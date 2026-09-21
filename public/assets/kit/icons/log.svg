@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="t" class="icon icon--log">
+  <title id="t">icon: trial log (four rows, one kept)</title>
+  <desc>Four hairline rows; the fourth row ends in a filled kept cell.</desc>
+  <g fill="none" stroke="#D8DBD8" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter">
+    <line x1="4" y1="5.75" x2="20" y2="5.75"/>
+    <line x1="4" y1="9.75" x2="20" y2="9.75"/>
+    <line x1="4" y1="13.75" x2="20" y2="13.75"/>
+    <line x1="4" y1="17.75" x2="14" y2="17.75"/>
+    <rect x="15.5" y="15.5" width="4.5" height="4.5" fill="#9BE15D" stroke="none" class="cell cell--kept"/>
+  </g>
+</svg>

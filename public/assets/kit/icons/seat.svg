@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="t" class="icon icon--seat">
+  <title id="t">icon: seat (one cell on its desk rule)</title>
+  <desc>One outlined cell resting on a hairline rule 2px wider than the cell: a seat at a desk.</desc>
+  <g fill="none" stroke="#D8DBD8" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter">
+    <rect x="6.75" y="4.75" width="10.5" height="10.5"/>
+    <line x1="5" y1="18.25" x2="19" y2="18.25"/>
+  </g>
+</svg>
