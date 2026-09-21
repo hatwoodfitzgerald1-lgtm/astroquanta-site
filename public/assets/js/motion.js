@@ -459,9 +459,76 @@
     });
   }
 
+  /* ------------------------------------------------------------------------------------------------
+     the hero plate (video add): the monitor wall loop behind the Home type column. Nothing is fetched before the
+     loader resolves (the sources are attached here, so the loop never competes with the fonts, the styles or the
+     libraries); the still that painted with the page stays beneath it and the loop fades in once it is playing.
+     Poster only under reduced motion, under 768, on save data and low memory devices. Paused offscreen and on hidden tabs.
+     ------------------------------------------------------------------------------------------------ */
+  function wirePlate() {
+    var plate = document.querySelector('[data-hero-plate]');
+    if (!plate) return;
+    var video = plate.querySelector('video');
+    var still = plate.querySelector('img');
+    var PHONE = window.matchMedia('(max-width: 767.98px)').matches;
+    if (RM || PHONE || LOW || !video) {
+      /* the poster alone: the blurred still that painted with the page is swapped for the graded poster (the phone crop
+         under 768) once the loader has resolved, so the poster's bytes never sit in the first paint */
+      if (video && video.parentNode) video.parentNode.removeChild(video);
+      var posterSrc = still && (PHONE ? still.getAttribute('data-poster-m') : still.getAttribute('data-poster'));
+      if (posterSrc) AQ.onLoaderResolved(function () {
+        /* a second image over the still (never a src swap on the still itself, which would re enter it as a new, later
+           largest paint candidate); it sits 1px inside the still's box like the loop does */
+        var poster = document.createElement('img');
+        poster.className = 'hero__plate-poster'; poster.alt = ''; poster.decoding = 'async';
+        poster.width = PHONE ? 720 : 1440; poster.height = PHONE ? 900 : 810;
+        poster.addEventListener('load', function () { plate.classList.add('is-poster'); });
+        poster.src = posterSrc;
+        still.parentNode.appendChild(poster);
+      });
+      return;
+    }
+    var canPlay = typeof video.canPlayType === 'function' && (video.canPlayType('video/webm; codecs="vp9"') || video.canPlayType('video/mp4; codecs="avc1.640028"'));
+    if (!canPlay) { video.parentNode.removeChild(video); return; }
+    AQ.onLoaderResolved(function () {
+      var webm = video.getAttribute('data-webm'), mp4 = video.getAttribute('data-mp4');
+      [[webm, 'video/webm'], [mp4, 'video/mp4']].forEach(function (s) {
+        if (!s[0]) return;
+        var el = document.createElement('source'); el.src = s[0]; el.type = s[1]; video.appendChild(el);
+      });
+      video.addEventListener('playing', function () { plate.classList.add('is-playing'); AQ._plateStartedAt = Math.round(performance.now()); });
+      video.addEventListener('error', function () { plate.classList.remove('is-playing'); }, true);
+      var wanted = true, scrolling = null;
+      var tryPlay = function () {
+        if (!wanted || scrolling || document.hidden) return;
+        var p = video.play();
+        if (p && typeof p.catch === 'function') p.catch(function () { /* autoplay refused: the still stays */ });
+      };
+      video.load();
+      tryPlay();
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (entries) {
+          wanted = entries[0].isIntersecting;
+          if (wanted) tryPlay(); else if (!video.paused) video.pause();
+        }, { rootMargin: '80px' }).observe(plate);
+      }
+      /* the plate yields to the corridor: it holds its frame while the page is being scrolled (the signature scrub
+         keeps its whole frame budget) and runs on from the same frame 400ms after the scroll settles */
+      window.addEventListener('scroll', function () {
+        if (!video.paused) video.pause();
+        if (scrolling) window.clearTimeout(scrolling);
+        scrolling = window.setTimeout(function () { scrolling = null; tryPlay(); }, 400);
+      }, { passive: true });
+      document.addEventListener('visibilitychange', function () { if (document.hidden) { if (!video.paused) video.pause(); } else tryPlay(); });
+      window.addEventListener('pagehide', function () { try { video.pause(); } catch (e) { /* torn down */ } });
+    });
+  }
+  AQ.wirePlate = wirePlate;
+
   function boot() {
     var isHome = document.body.getAttribute('data-route') === 'home';
     notFoundFraction();
+    wirePlate();
     if (RM) {
       html.classList.add('rm');
       if (sceneName) { poster(); }
