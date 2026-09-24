@@ -40,12 +40,12 @@
   /* the Sidebar-Anchored skeleton: a fixed rail beside a scrolling console column */
   --rail-w: 240px;
   --strip-h: 44px;
-  --col-max: 1200px;                 /* the console column at the 1440 design width */
+  --col-max: none;                 /* the console column fills the viewport beside the rail */
   --gutter: var(--s-8);              /* inline gutter inside the console column at 1440 */
 
   /* container widths (four, used across every page so section rhythm has real steps) */
   --w-full: 100%;                                    /* full bleed across the console column */
-  --w-wide: min(100% - 2 * var(--gutter), 1104px);   /* the wide container: grids, tables, card rows */
+  --w-wide: min(100% - 2 * var(--gutter), 100%);   /* the wide container: grids, tables, card rows */
   --w-frame: 720px;                                  /* the console frame, canonical desktop width */
   --w-text: 65ch;                                    /* the reading measure */
   --w-narrow: 42rem;                                 /* the narrow measure for quotes and asides */
